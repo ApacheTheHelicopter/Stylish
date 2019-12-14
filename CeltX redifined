@@ -1,0 +1,187 @@
+:root {
+    --Accent: #f2ecd8;
+    --BG: #262626;
+    --LBG: #A69076;
+    --Highlight: #f2a35e;
+    --Icon: #a65a2e;
+}
+
+/* Color Section END */
+/* ----------------------- Style-optimization -----------------------
+ (Experimental) Gets rid of white backgrounds with no content to edit */
+html {
+    background-color: var(--BG) !important;
+}
+
+body {
+    background-color: var(--BG)!important;
+    color: var(--Accent) !important;
+}
+
+header {
+    background-color: var(--BG)!important;
+}
+
+footer {
+    background-color: var(--BG)!important;
+}
+/* kp was das hier machtt */
+.editor-container,
+.cx-pm-aveditor .editor-container,
+.cx-pm-av2editor .editor-container,
+.cx-pm-stageplayeditor .editor-container {
+    background-color: var(--BG)!important;
+}
+
+/* --------------  Lade screens  ------------ */
+.modal-dialog  {
+    background-color: var(--BG);
+        background: var(--BG);
+}
+.cx-processinglabel  {
+    background: var(--BG);
+        color: var(--Accent);
+}
+
+
+
+/* --------------  Script Auswahl menu  ------------ */
+#filelistscroll-container {
+    color: var(--Accent);
+}
+
+/*Ad remove*/
+.trial-bar,
+.trial-bar-holiday,
+.trial-ended,
+.btn-subscribe {
+    display: none !important;
+}
+
+/* BG */
+#projectlist-container,
+#scroll-container {
+    background-color: var(--BG) !important;
+    color: var(--Accent) !important;
+}
+
+/* Menu Text */
+.accordion-title,
+.other-files-title {
+    color: var(--Accent) !important;
+}
+.image-header, .image-library.locked {
+    background-color: var(--Highlight) !important;
+    color: var(--BG) !important;
+}
+#content{
+    background-color: var(--Highlight) !important;
+    color: var(--BG) !important;
+}
+.doc-block{
+    background-color: var(--BG) !important;
+    color: var(--Accent) !important;
+}
+
+.doc-block-title, 
+.integrated-doc-block,
+.doc-block-readonly,
+.doc-block-locked {
+    color: var(--Accent) !important;
+}
+
+.integrated-doc-block .doc-block-title a{
+    color: var(--Accent) !important;
+}
+/* --------------  Script Editor  ------------ */
+/* editor bg */
+.cx-pm-editor .ProseMirror-menubar-wrapper,
+.cx-pm-editor .ProseMirror-wrapper,
+.cx-pm-editor .cx-screenplay.cxscript {
+    background-color: var(--BG)!important;
+    color: var(--Accent);
+}
+
+/* Page */
+.cx-pm-editor .cx-screenplay div.page {
+    background-color: var(--BG)!important;
+    color: var(--BG);
+    box-shadow: 0px 3px 10px var(--Accent) !important;
+    border: 2px solid var(--Accent);
+}
+
+
+/* Formatierungen +/
+
+/*Scene Header*/
+p.sceneheading {
+    background-color: var(--Highlight) !important;
+}
+/*Action*/
+.action {
+    color: var(--Accent) !important;
+}
+/*Dialogue*/
+.dialog {
+    color: var(--Accent) !important;
+}
+/*Character*/
+.character {
+    color: #70CFFF !important;
+}
+/*Klammer*/
+.parenthetical {
+    color: #B0AB9D !important;
+}
+/*Shot*/
+.shot {
+    color: #70FF99 !important;
+}
+/*Transition*/
+.transition {
+    color: #FF8A8A !important;
+}
+/*Plain Text*/
+.text {
+    color: #FFCB8A !important;
+}
+/*Akt*/
+.act {
+    color: #FF9B70 !important;
+}
+
+/* Page number */
+.cx-pm-editor .cx-screenplay div.page .cxpage-meta-content .cxpage-meta-line-1 .cxpage-meta-line-1-col-3  {
+    color: var(--LBG) !important;
+}
+
+/* --------------  Navigation  ------------ */
+
+/* Project name itle */
+.cx-projectpalette-title-open.cx-projectpalette-title-main {
+        background-color: var(--Icon);
+}
+
+
+.cx-projectpalette-title   {  
+    color: var(--Accent) !important;
+    background-color: var(--Icon);
+}
+/* Szenen */
+.scenenav-list-item   {  
+    color: var(--BG) !important;
+    background-color: var(--Accent);
+}
+.scenenav-list-item.highlight{  
+    color: var(--BG) !important;
+    background-color: var(--Highlight);
+}
+/* --------------  Statistics  ------------ */
+
+.editor-status-bar {
+    color: var(--Accent) !important;
+}
+#statusBarDiv{
+    background-color: var(--Icon) !important;
+}
+
