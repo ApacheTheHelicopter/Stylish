@@ -1,3 +1,24 @@
+/* An CeltX re-color by u/Apache3348
+
+-> https://www.reddit.com/user/Apache_3348
+-> https://github.com/ApacheTheHelicopter
+
+See my other styles
+        --> https://userstyles.org/users/849222
+
+My Patreon (german)
+        --> https://www.patreon.com/apache
+
+
+*/
+/* License info: Feel free to change the style at any time and reupload it 
+(note: Leave this tag here and add your own below) */
+/* Colors
+    Go to color.adobe.com if you want to get some preset color packs
+     You can change these at any given point of time
+      Invert the Accent and Background Color if you want light theme */
+
+
 :root {
     --Accent: #f2ecd8;
     --BG: #262626;
