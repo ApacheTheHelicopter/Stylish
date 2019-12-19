@@ -1,3 +1,3 @@
 # BeastSaber
 
-This is my GitHub page where I upload my Styles and resources for them.
+Tired of the white background and boring theme? Get the dark Mode for bsaber.com !
