@@ -1,4 +1,4 @@
-# 9aniime
+# 9anime
 
 Get this dark mode 9anime Style for a new moodern and sleek look for 9anime.to
 
