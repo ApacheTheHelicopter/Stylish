@@ -1,3 +1,3 @@
-# Stylish
+# Idealo Style
 
-This is my GitHub page where I upload my Styles and resources for them.
+An Idealo Style that strives for clarity and user-friendliness
