@@ -1,0 +1,158 @@
+:root {
+    --BG: #27455c;
+    /* Background */
+    --LBG: #45757d;
+    /* Light-Background */
+    --Accent: #d1e0d3;
+    /* Accent color for Text, should fit with both backgrounds */
+    --Highlight: #99bfaa;
+    /* Highlight color, should fit with dark background */
+    --Icon: #6c9e93;
+    /* Icon Color, should fit with light background */
+}
+
+
+.html,
+.header,
+.footer,
+.body {
+    background-color: var(--BG) !important;
+}
+html {
+    background: var(--BG) !Important;
+}
+
+::after
+body::before {
+    background: var(--BG) !important;
+}
+
+.un-page {
+    background-color: var(--LBG);
+}
+
+
+
+/*-----------Header---------*/
+/*Datum*/
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    color: var(--Icon);
+}
+.untis-bootstrap .un-app-header.navbar .navbar-right .Select .Select-control {
+    background-color: var(--Icon);
+
+}
+
+.untis-bootstrap .un-app-header.navbar .navbar-brand h1 {
+    color: var(--Accent);
+    
+}
+
+/*Icons*/
+.untis-bootstrap .un-app-header.navbar .navbar-right .un-navlink {
+    color: var(--Icon);
+}
+/*logout*/
+.untis-bootstrap .un-app-header.navbar .navbar-right .btn-login, .untis-bootstrap .un-app-header.navbar .navbar-right .btn-logout {
+    background-color: var(--Icon);
+    border-color: var(--Highlight);
+    
+}
+
+.untis-bootstrap .un-app-header.navbar {
+    background-color: var(--LBG);
+          box-shadow: 0px 10px 30px #27455c42;
+}
+
+
+.un-timetable-page__header {
+    background-color: var(--BG) !important;
+}
+
+.un-page__header {
+    background-color: var(--Icon);
+}
+
+
+
+/*Buttons*/
+.untis-bootstrap .nav-tabs > li > a:focus:hover, .untis-bootstrap .nav-tabs > li > a:hover {
+    color: var(--Highlight) !important;
+    box-shadow: var(--Highlight) !important;
+}
+.untis-bootstrap .nav-tabs > li > a, .untis-bootstrap .nav-tabs > li > a {
+    background-color: var(--Icon) !important;
+}
+.untis-bootstrap .nav-tabs > li > a:focus:hover, .untis-bootstrap .nav-tabs > li > a:hover {
+    background-color: var(--LBG) !important;
+}
+span {
+    color: var(--Accent) !important;
+}
+
+/*-----------Sidebar---------*/
+
+
+.untis-bootstrap .un-app-nav {
+    background-color: var(--LBG) !important;
+  box-shadow: 1px 1px 30px #27455c99;
+}
+.untis-bootstrap .un-app-nav .un-navlink {
+    color: var(--Accent) !important;
+}
+.untis-bootstrap .un-app-nav .un-navlink:hover {
+    color: var(--Accent) !important;
+    background-color: var(--Icon) !important;
+}
+.untis-bootstrap .un-app-nav .un-navlink--active, .untis-bootstrap .un-app-nav .un-navlink--active .un-navlink__label, .untis-bootstrap .un-app-nav .un-navlink--active:focus, .untis-bootstrap .un-app-nav .un-navlink--active:focus .un-navlink__label, .untis-bootstrap .un-app-nav .un-navlink--active:hover, .untis-bootstrap .un-app-nav .un-navlink--active:hover .un-navlink__label {
+    background-color: var(--Icon);
+}
+
+/*-----------Stundenplan---------*/
+
+
+/*Datum*/
+
+.untis-bootstrap .form-control {
+    background-color: var(--LBG);
+}
+.Select.is-disabled > .Select-control{
+    background-color: var(--LBG);
+}
+/*Buttons*/
+.untis-bootstrap .btn-default {
+    background: var(--Icon);
+}
+.untis-bootstrap .btn-default:hover {
+    background: var(--Highlight);
+}
+
+.un-timetable-page__body {
+    background: var(--BG) !important;
+}
+.un-timetable {
+    background: var(--BG) !important;
+    color: var(--Highlight) !important;
+}
+
+/*Block*/
+.renderedEntry {
+    background-color: var(--LBG) !important;
+    transition: background-color 1000ms ease !important;
+    margin: 0px !important;
+
+}
+.renderedEntry:hover {
+    background-color: var(--Icon) !important;
+    transition: background-color 10ms ease !important;
+    margin: 2px !important;
+
+}
+
+
+
+
+.un-timetable-page__update-timestamp {
+    color: var(--Accent);
+}
