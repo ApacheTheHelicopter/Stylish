@@ -1,6 +1,7 @@
-# Stylish
+# Spotify
 
-This is my GitHub page where I upload my Styles and resources for them.
+New Spotify Web-Player.
+Looking forward to modify the Desktop App soon.
 
 Basic tutorial:
 
