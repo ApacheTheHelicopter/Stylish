@@ -1,0 +1,243 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+div.object-ignore object,
+div.rotating-flash object,
+div.teaser object,
+div.visual object {
+    display: none !important;
+}
+:root {
+    --background-color: #262626;
+    --primary-color: #a65a2e;
+    --font-color: #f2ecd8;
+    --Accent: #F2A35E;
+}
+
+
+/*header*/
+.dhl.redesign.header {
+    background-image: none;
+    background-color: var(--Accent);
+}
+.header__logo {
+    fill: var(--font-color) !important;
+}
+
+body {
+    background: var(--background-color);
+}
+body.blur-background > :not(.header-wrap) {
+    background-color: var(--background-color) !important;
+}
+
+.dhl.redesign .header__navigationWrapper, .dhl.redesign .header__userMenuWrapper {
+    background-color: var(--primary-color);
+}
+.dhl.redesign .header__navigationWrapper li > a:hover, .dhl.redesign .header__userMenuWrapper li > a:hover, .dhl.redesign .header__navigationWrapper li > a:focus, .dhl.redesign .header__userMenuWrapper li > a:focus{
+    background-color: var(--accent);
+}
+
+/*sind sie nicht da*/
+.dhl.redesign .bg-white{
+    background-color: var(--Acent);
+    border: 1px solid var(--primary-color) !important;
+
+}
+    .dhl.redesign .text-primary-500, .dhl.redesign .text-primary {
+        color: var(--primary-color);
+    }
+.dhl.redesign.verfolgen .mm_shipmentHeader .mm_shipmentReference .mm_shipment-number{
+    color: var(--background-color);
+}
+/*button*/
+.no-touch .dhl.redesign .btn:hover, .no-touch .dhl.redesign .btn:focus {
+    color: var(--font-color);
+    border: 1px solid;
+            border-color: var(--background-color);
+        background-color: var(--font-color);
+}
+
+.no-touch .dhl.redesign .btn, .no-touch .dhl.redesign .btn {
+    background-color: var(--primary-color);
+        border: 1px solid;
+    border-color: var(--Accent);
+}
+/*PLZ eingabe*/
+.dhl.redesign input[type="text"], .dhl.redesign input[type="email"], .dhl.redesign input[type="password"], .dhl.redesign input[type="search"], .dhl.redesign input[type="number"], .dhl.redesign input[type="tel"]{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border: 1px solid var(--Accent) !important;
+}
+
+.btn {
+    color: var(--Accent) !important;
+}
+
+
+.panel {
+    background: var(--primary-color);
+}
+
+.panel-title {
+    color: var(--font-color) !important;
+}
+
+.mm_shipmentHeader {
+    background: var(--Accent) !important;
+    border: 2px solid var(--primary-color) !Important;
+    color: var(--background-color) !important;
+}
+
+.imageTextTeaser__content {
+    background: var(--primary-color);
+}
+
+.imageTextTeaser__content p,
+a,
+h5,
+.txt {
+    color: var(--font-color) !important;
+}
+
+a:hover{
+    color: var(--Accent-color) !important;
+}
+/*progress bar*/
+.dhl.redesign.verfolgen .mm_deliveryProgress.mm_deliveryProgress-green {
+    background:linear-gradient(90deg, #f2a35e,#f2ecd8) !important;
+    border: 1px solid;
+}
+.dhl.redesign.verfolgen .mm_deliveryProgress .mm_deliveryStep {
+    border-right: 2px solid var(--background-color);
+}
+.dhl.redesign.verfolgen .mm_deliveryProgress .mm_deliveryStep {
+    background-color: var(--background-color);
+}
+.footer {
+    background: var(--primary-color) !important;
+}
+
+.footer a {
+    color: var(--font-color) !important;
+}
+
+.header-info {
+    background: var(--primary-color) !important;
+}
+
+.header-info a,
+p {
+    color: var(--font-color) !important;
+}
+
+.loggedInUserName {
+    color: black;
+}
+
+.background-wrapper {
+    background: black !important;
+}
+
+div .header__linkCaption {
+    color: black;
+}
+
+.header-tab {
+    color: black !important;
+}
+
+.cookie-hint {
+    background: var(--primary-color) !important;
+}
+
+.search a {
+    color: black !important;
+}
+
+.header__navigationDropdown {
+    background: var(--primary-color) !important;
+}
+
+.sub-menu .header__linkCaption {
+    color: var(--font-color);
+}
+
+.header__navigationDropdown .header__linkCaption {
+    color: var(--font-color) !important;
+}
+
+.lang__list {
+    background: var(--primary-color) !important;
+}
+
+.lang__list-item:hover a {
+    color: black !important;
+}
+
+h2 {
+    color: var(--font-color) !important;
+}
+
+h3 {
+    color: var(--font-color) !important;
+}
+
+h4 {
+    color: var(--font-color) !important;
+}
+
+.btn {
+    color: black !important;
+}
+
+.panel-heading {
+    background: var(--primary-color) !important;
+}
+
+table td {
+    background: var(--primary-color) !important;
+    color: var(--font-color) !important;
+}
+
+table th p {
+    color: black !important;
+}
+
+strong {
+    color: var(--primary-color) !important;
+}
+
+.checkmark li {
+    color: var(--font-color) !important;
+}
+
+.text-image.hideable {
+    background: var(--primary-color) !important;
+}
+
+.stepGuide div {
+    background: var(--primary-color) !important;
+}
+
+.accordion {
+    background: var(--primary-color) !important;
+}
+
+.postagecalculator {
+    background: var(--primary-color) !important;
+}
+
+.imageTextTeaser__content {
+    background: var(--primary-color) !important;
+}
+
+#shipment-events {
+    color: var(--font-color);
+}
+
+.popup__container {
+    background: var(--primary-color) !important;
+}
+
+.dropdown-menu {
+    background: var(--primary-color) !important;
+}
