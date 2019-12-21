@@ -1,0 +1,186 @@
+:root {
+    --Accent: #f2ecd8;
+    --Highlight: #f2a35e;
+    --Icon: #a69076;
+    --BG: #262626;
+    --LBG: #302d2c;
+}
+
+
+html {
+    background-color: var(--BG) !Important;
+}
+body {
+    background-color: var(--BG) !Important;
+}
+
+/*----------css.Header-----------*/
+.p-nav {
+    color: var(--Accent) !important;
+    background-color: var(--Highlight)
+}
+.uix_headerContainer .p-navSticky.is-sticky .p-nav {
+    background-color: var(--Highlight)
+}
+.uix_headerContainer {
+    background: var(--Highlight)
+}
+.p-header {
+    background-color: var(--Highlight) !important;
+}
+/*----------css.Messages-----------*/
+/*Switch ding*/
+.button.button--link,
+a.button.button--link {
+    background-color: var(--LBG);
+    border-color: var(--Highlight) !important;
+}
+
+
+/*Quotes*/
+.bbCodeBlock {
+    background-color: var(--LBG) !Important;
+    border-left: 2px solid var(--Highlight);
+    transition: border-left 500ms ease !important;
+}
+.bbCodeBlock:hover {
+    background-color: var(--LBG) !Important;
+    border-left: 4px solid var(--Highlight);
+    transition: border-left 500ms ease !important;
+}
+.bbCodeBlock-title {
+    background-color: var(--BG) !Important;
+    color: var(--Highlight);
+}
+
+.block--messages,
+.message {
+    background-color: var(--LBG) !Important;
+    color: var(--Accent) !important;
+}
+.message-cell--user {
+    background-color: var(--LBG) !important;
+    box-shadow: 5px 1px 5px var(--BG) !important;
+}
+
+/*Messsage controls*/
+.message-cell--qaControls {
+    background-color: var(--Accent) !important;
+    box-shadow: 5px 1px 10px var(--BG) !important;
+}
+/*Controls*/
+.message-cell--qaControls .th__qaControls__vote {
+    color: var(--Highlight)
+}
+/*----------css.Other_threads-----------*/
+.block-container {
+    background-color: var(--LBG) !important;
+    color: var(--Accent);
+}
+.dataList-row.dataList-row--header .dataList-cell {
+    background-color: var(--Icon);
+    color: var(--LBG);
+}
+
+
+/*----------css.Search-----------*/
+
+.uix_searchBar .uix_searchBarInner.block-container .uix_searchForm {
+    background-color: var(--LBG) !important;
+    color: var(--Accent) !Important;
+}
+
+.menu-content,
+.menu-footer {
+        background-color: var(--LBG) !important;
+    color: var(--Accent) !Important;
+}
+
+/*----------css.Icons-----------*/
+.uix_noticeIcon {
+    color: var(--Accent) !important;
+}
+/*----------css.input-----------*/
+/*Editor*/
+.fr-toolbar {
+    background-color: var(--Accent);
+    border-color: var(--Highlight);
+}
+.fr-box.fr-basic .fr-wrapper {
+    background-color: var(--BG);
+    color: var(--Accent) !important;
+    border-color: var(--Highlight);
+}
+
+.input {
+    background: var(--Icon);
+    color: var(--Accent);
+    border-color: var(--Highlight) !important;
+}
+.formRow, .formRow--input {
+        background-color: var(--LBG) !important;
+}
+
+/*----------css.Quick_post-----------*/
+.future_quickThreadWidget .block-body {
+    background-color: var(--LBG);
+    color: var(--Accent);
+}
+
+
+/*----------css.Notification-----------*/
+.notice.notice--primary .uix_noticeIcon {
+    background-color: var(--Highlight);
+}
+.notice.notice--primary {
+    background: var(--LBG);
+    color: var(--Icon);
+    border-color: var(--Highlight)
+}
+
+
+
+/*----------css.Sidebar-----------*/
+.uix_sidebarNav {
+    background-color: var(--lBG);
+}
+.uix_sidebarNavList > li .p-navEl-link,
+.uix_sidebarNav .uix_sidebarNavList > li .blockLink {
+    color: var(--Accent) !important;
+}
+
+
+
+/*----------css.Footer-----------*/
+.uix_extendedFooter,
+.p-footer-copyrightRow {
+    background-color: var(--LBG);
+    color: var(--Icon);
+    box-shadow: 0px -5px 100px var(--LBG)
+}
+.uix_extendedFooter .uix_extendedFooterRow .block .block-container {
+    color: var(--Icon);
+}
+
+/*----------css.Classes-----------*/
+span {
+    color: var(--Accent) !important;
+}
+label {
+    color: var(--Accent) !important;
+}
+p{
+    color: var(--Accent) !important;
+}
+h1 {
+    color: var(--Accent) !important;
+}
+h3 {
+    color: var(--Accent) !important;
+}
+a {
+    color: var(--Icon) !important;
+}
+a:hover {
+    color: var(--Highlight) !important;
+}
