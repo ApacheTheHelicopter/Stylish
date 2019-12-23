@@ -1,0 +1,126 @@
+:root {
+    --BG: #16272b;
+    --LBG: #1a454d;
+    --Accent: #ecf0f1;
+    --Highlight: #27ae60;
+    --Icon: #bdc3c7;
+    --Web-BG: #16272b;
+}
+
+html {
+    background-color: var(--Web-BG) !important;
+}
+/* Login */
+form#login {
+    background: var(--BG);
+}
+
+
+/*Nav bar*/
+nav > ul > li:hover > ul {
+    transition: display 250ms ease !important;
+    display: block !important;
+}
+nav > ul > li > ul {
+    transition: display 250ms ease !important;
+    display: none !important;
+}
+ul {
+    background: var(--LBG) !Important;
+    -webkit-box-shadow: none;
+    box-shadow: 0px 4px 10px var(--BG) !important;
+}
+ul:hover {
+    background: var(--LBG) !Important;
+    -webkit-box-shadow: none;
+    box-shadow: 0px 4px 10px var(--BG) !important;
+}
+li {
+    background: var(--LBG) !Important;
+    -webkit-box-shadow: none;
+    box-shadow: 0px 4px 10px var(--BG) !important;
+}
+nav > ul > li > ul > li {
+    background: var(--LBG) !Important;
+    transition: border 250ms ease !important;
+    transition: margin 250ms ease !important;
+    border: 1px solid var(--Icon) !important;
+    margin: 0px;
+    box-shadow: 0px 4px 10px var(--BG) !important;
+}
+nav > ul > li > ul > li:hover {
+    background: var(--LBG) !Important;
+    margin: 5px !important;
+    border: 1px solid var(--Highlight) !important;
+    transition: border 250ms ease !important;
+    transition: margin 250ms ease !important;
+    box-shadow: 0px 4px 10px var(--BG) !important;
+}
+/*Folgen*/
+tr {
+    background-color: var(--LBG);
+}
+.serie table.episodes tr:focus,
+.serie table.episodes tr:hover {
+    background-color: var(--Highlight) !important;
+    transition: background-color 100ms ease !important;
+}
+.serie table.episodes tr:nth-child(2n) {
+    background-color: var(--LBG);
+    transition: background-color 250ms ease !important;
+}
+
+.serie table.episodes tr td:nth-child(1) > a {
+    background-color: var(--BG)!important;
+    transition: background-color 250ms ease !important;
+}
+.serie table.episodes tr td:nth-child(1) > a:hover {
+    background-color: var(--Highlight)!important;
+    transition: background-color 100ms ease !important;
+}
+/*body BG*/
+.serie {
+    background-color: var(--LBG) !important;
+}
+/*staffeln*/
+.serie .frame ul li a:hover {
+    background-color: var(--Accent);
+}
+.serie .frame ul li a {
+    background-color: var(--Highlight);
+}
+/*Sprachen*/
+.nice-select {
+    background-color: var(--BG)
+}
+
+/*Footer*/
+.footer {
+    background: none !important;
+}
+
+/* Klassen */
+p {
+    color: var(--Accent) !important;
+}
+strong {
+    color: var(--Icon) !important;
+}
+h2 {
+    color: var(--Accent) !important;
+}
+h3 {
+    color: var(--Accent) !important;
+}
+span {
+    color: var(--Accent) !important;
+}
+small {
+    color: var(--Icon) !important;
+}
+a {
+    color: var(--Accent) !important;
+}
+a:hover {
+    color: var(--Icon) !important;
+}
