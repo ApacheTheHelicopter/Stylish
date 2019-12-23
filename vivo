@@ -1,0 +1,74 @@
+/* Vivo custom by u/Apache3348 
+*/
+
+:root {
+    --BG: #262626;
+    --LBG: #a65a2e;
+    --Accent: #f2ecd8;
+    --Highlight: #f2a35e;
+    --Icon: #a69076;
+}
+
+html {
+    background-color: var(--BG) !important;
+}
+
+
+/* Ladeleiste */
+
+.plyr--full-ui input[type="range"] {
+    color: var(--Highlight) !important;
+}
+/* buffer */
+.plyr--video.plyr--loading .plyr__progress__buffer {
+    background-color: var(--LBG);
+}
+
+/* Play-Button */
+
+.plyr__control--overlaid {
+    background: var(--BG);
+    color: var(--Icon);
+}
+.plyr__control {
+    background: none !important;
+    color: var(--Icon) !important;
+    
+}
+
+.plyr__control:hover {
+    background: var(--LBG) !important;
+    color: var(--Accent) !important;
+    
+}
+.plyr__control:hover {
+    background: var(--LBG) !important;
+    color: var(--Accent) !important;
+}
+
+.plyr_tab-focus {
+    background: var(--LBG) !important;
+    color: var(--Accent) !important;
+}
+/* Titel */
+
+.vivo-content-box-wrapper .vivo-content-box h1 {
+    color: var(--Accent);
+}
+/* größe */
+.vivo-content-box-wrapper .vivo-content-box-watch h1 strong {
+    color: var(--Icon);
+}
+
+/* Play-controls */
+
+.plyr--video .plyr__controls {
+    color: var(--Icon) !important;
+}
+
+/* Ads remover */
+
+.plyr__logo {
+    display:none;
+}
+
