@@ -1,10 +1,10 @@
 :root {
-    --BG: #16272b;
-    --LBG: #1a454d;
-    --Accent: #ecf0f1;
-    --Highlight: #27ae60;
-    --Icon: #bdc3c7;
-    --Web-BG: #16272b;
+    --BG: #21201f;
+    --LBG: #262626;
+    --Accent: #f2ecd8;
+    --Highlight: #f2a35e;
+    --Icon: #a65a2e;
+    --Web-BG: #181818;
 }
 
 html {
@@ -123,4 +123,31 @@ a {
 }
 a:hover {
     color: var(--Icon) !important;
+}
+
+/*  preview */
+
+.serie .hoster-player {
+    background: var(--BG) !important;
+    border: 1px solid var(--Highlight);
+}
+u {
+    color: var(--Highlight) !important;
+    transition: color 250ms ease !important;
+}
+u:hover {
+    color: var(--Icon) !important;
+        transition: color 250ms ease !important;
+}
+.serie .hoster-player > .play::before {
+    color: var(--Highlight) !important;
+        transition: color 250ms ease !important;
+}
+.serie .hoster-player:hover > .play::before {
+    color: var(--Icon) !important;
+        transition: color 250ms ease !important;
+}
+/* Geting rid of that stuipid animation */
+.serie .hoster-player:hover > h2.bounce {
+    animation: none !important;
 }
