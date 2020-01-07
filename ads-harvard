@@ -1,0 +1,141 @@
+:root {
+    --BG: #21201f;
+    --LBG: #2a2a2a;
+    --Accent: #f2ecd8;
+    --Highlight: #f2a35e;
+    --Icon: #a65a2e;
+    --Web-BG: #181818;
+}
+
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: var(--Web-BG)!important}  
+
+
+html {
+    background-color: var(--Web-BG) !important;
+}
+
+body {
+    background-color: var(--BG) !important;
+    color: var(--Accent) !important;
+}
+.s-main-content-container {
+    background-color: var(--BG) !important;
+}
+
+/* ------ Homepage -------- */
+
+.s-dynamic-page-body {
+    background-color: var(--BG) !important;
+}
+.s-results-control-row-container {
+    background-color: var(--BG) !important;
+}
+
+/* ------ login -------- */
+
+
+
+/* ------ Article -------- */
+
+/* NAV bar */
+.s-nav-container {
+    background-color: var(--BG) !important;
+}
+.s-nav-inactive:hover {
+    background-color: var(--LBG) !important;
+}
+.s-nav:hover {
+    background-color: var(--LBG) !important;
+}
+.s-nav-inactive {
+    color: var(--Highlight) !important;
+}
+.s-nav-selected {
+    background-color: var(--LBG) !important;
+}
+
+
+.s-right-col-widget-container,
+.resources__container {
+    background-color: var(--BG) !important;
+}
+.resources__header__row {
+    color: var(--Accent);
+}
+
+
+
+
+/* input */
+.form-control {
+    background-color: var(--Accent) !important;
+    color: var(--BG);
+}
+.s-clear-control {
+    color: var(--BG);
+}
+.s-clear-control:hover {
+    color: var(--LBG);
+}
+.btn-primary {
+    background-color: var(--LBG) !important;
+    color: var(--Accent);
+    border-color: var(--Accent);
+}
+.btn-primary:hover {
+    background-color: var(--Accent) !important;
+    color: var(--LBG);
+    border-color: var(--Accent);
+}
+
+
+
+/* btn */
+.select2-container--default .select2-selection--single {
+    background-color: var(--Highlight) !important;
+    color: var(--BG);
+    border: none;
+}
+
+.btn-link {
+    color: var(--Highlight);
+}
+.btn-default-flat {
+    background-color: var(--Highlight) !important;
+    color: var(--BG);
+    border: none;
+}
+.btn-default-flat:hover {
+    background-color: var(--BG) !important;
+    color: var(--Highlight);
+    box-shadow: 1px 1px 4px var(--Highlight);
+    border: none;
+}
+
+
+
+/* obj */
+a {
+    color: var(--Highlight) !important;
+}
+a:hover {
+    color: var(--Accent) !important;
+}
+span {
+    color: var(--Accent) !important;
+}
+span:hover {
+    color: var(--Highlight) !important;
+}
+h1 {
+    color: var(--Highlight) !important;
+}
+h2 {
+    color: var(--Highlight) !important;
+}
+h3 {
+    color: var(--Accent) !important;
+}
+dt {
+    color: var(--Highlight) !important;
+}
