@@ -1,0 +1,324 @@
+:root {
+    --BG: #262626;
+    --Accent: #F2ECD8;
+    --Highlight: #F2A35E;
+    --Icon: #A65A2E;
+    --LBG: #A69076;
+}
+
+
+html {
+    background: var(--BG) !important;
+}
+body {
+    background: var(--BG) !important;
+}
+header {
+    background: var(--BG) !important;
+}
+footer {
+    background: var(--BG) !important;
+}
+
+
+
+/* ------------------ Kurse ----------------- */
+
+.coursecard.aurora-1, .coursecard.pacific-3, .coursecard.smog-3,.coursecard.peach-4, .coursecard.smog-1 {
+    background-color: var(--BG) !important;
+}
+.coursecard__info {
+    background-color: var(--Icon) !important;
+}
+
+
+.itsl-homepagetabs-tab.active > span, .itsl-homepagetabs-tab:active > span {
+    background-color: var(--Icon) !important;
+    border-color: var(--Highlight);
+}
+
+.itsl-homepagetabs-tab:not(.active) > span{
+    background-color: var(--BG) !important;
+    border-color: var(--Highlight);
+}
+
+
+.itsl-homepagetabs-tab:not(.active):hover > span{
+    background-color: var(--LBG) !important;
+    border-color: var(--Highlight);
+}
+
+/* ------------------ Head ----------------- */
+nav.l-main-menu ul,
+nav.l-personal-menu {
+    background-color: var(--BG) !important;
+}
+
+nav.l-main-menu li.active a:not(.ccl-button):link,
+nav.l-main-menu li.active button:not(.ccl-button):link,
+nav.l-main-menu li.active a:not(.ccl-button):visited,
+nav.l-main-menu li.active button:not(.ccl-button):visited,
+nav.l-main-menu li.active a:not(.ccl-button):active,
+nav.l-main-menu li.active button:not(.ccl-button):active,
+nav.l-main-menu li.active a:not(.ccl-button):hover,
+nav.l-main-menu li.active button:not(.ccl-button):hover {
+    background-color: var(--LBG) !important;
+}
+ul.l-main-menu-items > li > a:hover,
+ul.l-more-menu > li > button:hover {
+    background-color: var(--Icon) !important;
+    transition: background-color 200ms ease !important;
+    transition: margin ease !important;
+    margin: 1px !Important;
+}
+ul.l-main-menu-items > li > a,
+ul.l-more-menu > li > button {
+    background-color: var(--BG) !important;
+    transition: margin ease !important;
+    transition: background-color 200ms ease !important;
+    margin: 0px !Important;
+}
+
+
+.l-main-content-header {
+    background-color: var(--LBG) !important;
+    box-shadow: 0px 5px 5px var(--LBG) !important;
+}
+
+span {
+    color: var(--Accent) !important;
+}
+.l-main-content-nav > li > a.active {
+    color: var(--Accent) !important;
+    border-bottom: 2px solid var(--Highlight) !important;
+}
+
+.l-main-content-nav > li > a {
+    color: var(--BG) !important;
+}
+/* ------------------ Sidebar ----------------- */
+.treemenu-viewport {
+    background-color: var(--BG) !important;
+    color: var(--Accent) !important;
+    border-right: 1px solid var(--Highlight) !important;
+    box-shadow: 0px 10px 20px var(--LBG) !important;
+}
+.treemenu-viewport .ccl-treemenu.jstree a,
+.treemenu-viewport .ccl-treemenu.jstree li > span {
+    color: var(--Accent) !important;
+}
+
+
+
+/* ------------------ body ----------------- */
+h1.ccl-pageheader,
+h1.ccl-pageheader > span,
+h1.ccl-pageheader input.ccl-pageheader-title-editor {
+    color: var(--Accent) !important;
+}
+
+
+a {
+    color: var(--Accent);
+}
+a:hover {
+    color: var(--Highlight) !important;
+}
+
+
+
+
+body:not(.l-group-dashboard) .itsl-cb-news .itsl-widget-content-ul > li,
+.itsl-cb-stream .itsl-widget-content-ul > li,
+.l-modern-ui-dashboard .itsl-cb-notifications .itsl-widget-content-ul > li {
+    background-color: var(--Icon);
+    border-color: rgba(0, 0, 0, 0);
+}
+.il-widget-titleBlock > h2 {
+    color: var(--Accent);
+}
+body:not(.l-group-dashboard) .il-widget.itsl-cb-news .itsl-widget-content-ul > li,
+.il-widget.itsl-cb-stream .itsl-widget-content-ul > li {
+    background-color: var(--Icon);
+    border-top: 0px solid !important;
+}
+
+.h-inactive {
+    color: var(--Accent) !important;
+}
+
+
+
+/* ------------------ settings ----------------- */
+ul.l-personal-menu-dd {
+    background: var(--Highlight)
+}
+.l-personal-menu-dd-header {
+    background: var(--BG);
+    border-top: 0px solid !Important;
+    margin-top: -10px !Important;
+}
+
+.l-personal-menu-dd .l-dropdown-menu-item > a:hover {
+    background: var(--BG);
+    transition: background-color 200ms ease !important;
+}
+.l-personal-menu-dd .l-dropdown-menu-item > a {
+    background: rgba(0, 0, 0, 0);
+    transition: background-color 200ms ease !important;
+}
+
+
+/* dropdown */
+.c-messages__header {
+    background: var(--BG) !important;
+    border-top: 0px solid !Important;
+}
+.c-messages__heading {
+    color: var(--Accent) !important;
+}
+.c-messages__threads .c-list-ui__link:focus,
+.c-messages__threads .c-list-ui__link {
+    background: var(--BG) !important;
+    border: 0px solid !Important;
+}
+.o-list-ui,
+.o-list-ui > li,
+.o-list-ui__item {
+    border-bottom: 1px solid var(--Highlight) !Important;
+}
+.c-messages__footer {
+    background: var(--BG) !important;
+}
+
+
+/* --- BTN ---- */
+
+.c-modern__button--cancel > span {
+    background-color: var(--Icon) !important;
+    transition: background-color 500ms ease !important;
+    border-color: var(--Icon);
+}
+.c-modern__button--cancel:hover:not(:disabled) > span {
+    background-color: var(--BG) !important;
+    transition: background-color 500ms ease !important;
+    border-color: var(--Highlight);
+}
+
+.c-modern__button--confirm:hover:not(:disabled) > span {
+    background-color: var(--BG) !important;
+    transition: background-color 500ms ease !important;
+    border-color: var(--Highlight);
+}
+.c-modern__button--confirm > span {
+    background-color: var(--Icon) !important;
+    transition: background-color 500ms ease !important;
+    border-color: var(--Icon);
+}
+
+
+/* Resources */
+
+.itsl-formbox {
+        background-color: var(--LBG) !important;
+    border: 0px solid !important;
+    box-shadow: 0px 0px 0px !important;
+}
+
+.ccl-grid .gridtable tbody tr {
+        background-color: var(--BG) !important;
+}
+a, a:active, a:focus, a:hover, a:link, a:visited {
+    color: var(--Accent);
+}
+
+.ccl-grid th {
+    background-color: var(--Highlight);
+    color: var(--BG);
+}
+.ccl-pager > .page-size-chooser > select {
+    background-color: var(--Highlight);
+    color: var(--BG);
+    border: 0px solid !Important;
+}
+
+
+.ccl-pager {
+    color: var(--BG) !important;
+}
+
+
+/* Inpout */
+
+.itsl-process-folder-search > .il-search-box > .il-search-textbox {
+    background: var(--BG);
+    border: 0px solid;
+}
+
+button, input, optgroup, select, textarea {
+    color: var(--Accent) !important;
+}
+
+.il-search + .il-search-liveresults {
+    background: var(--BG);
+    border: 0px solid;
+}
+
+.c-dropdownMenu__navigation .c-search input:valid {
+    background: var(--Highlight);
+        color: var(--BG) !important;
+    border: 0px solid;
+}
+.c-dropdownMenu__navigation .c-dropdown select:focus, .c-dropdownMenu__navigation .c-dropdown select:hover {
+    background: var(--Highlight);
+    border-color:rgba(0,0,0,0) ;
+}
+.c-dropdownMenu__navigation .c-dropdown select, .c-dropdownMenu__navigation .c-dropdown select {
+    background: var(--Highlight);
+    border-color:rgba(0,0,0,0) ;
+}
+
+.l-topmenu-searchbox .ccl-searchtextbox-personalmenu input:focus, .l-topmenu-searchbox .ccl-searchtextbox-personalmenu input:hover {
+    border: 0px solid !important; 
+}
+.l-topmenu-searchbox .ccl-searchtextbox-personalmenu input  {
+    border: 0px solid !important; 
+}
+
+
+/* Settings */
+
+.ccl-formcontainer .ccl-formpanel-descriptionlabel {
+    color: var(--Accent);
+}
+.ccl-formsection-ol input[type="text"]  {
+            background: var(--BG);
+    border: 0px solid !important; 
+}
+
+
+/* Dropdownds */
+
+.c-dropdownMenu__navigation {
+        background: var(--BG);
+    border-bottom: 0px solid;
+}
+
+.l-menu-course .ccl-dropdownmenu > div > ul > li, .l-menu-project .ccl-dropdownmenu > div > ul > li, .l-menu-yourchildren .ccl-dropdownmenu > div > ul > li  {
+        background: var(--LBG);
+}
+.l-menu-course .ccl-dropdownmenu > div > ul > li:hover, .l-menu-project .ccl-dropdownmenu > div > ul > li:hover, .l-menu-yourchildren .ccl-dropdownmenu > div > ul > li:hover  {
+        background: var(--BG);
+}
+
+
+.l-menu-course .ccl-dropdownmenu .dropdown-menu-item, .l-menu-project .ccl-dropdownmenu .dropdown-menu-item, .l-menu-yourchildren .ccl-dropdownmenu .dropdown-menu-item  {
+    color: var(--Accent) !important;
+}
+
+.c-dropdownMenu__all {
+    border-top: 1px var(--BG) solid;
+}
+.c-dropdownMenu__navigation .c-dropdown > select {
+        background-color: var(--Highlight) !important;
+}
