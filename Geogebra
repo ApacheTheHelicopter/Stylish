@@ -1,0 +1,139 @@
+:root {
+    --Accent: #b629f2;
+    --BG: #161a26;
+    --LBG: #1c1240;
+    --Highlight: #d0d5f2;
+    --Icon: #2a2773;
+}
+
+html {
+    background: var(--LBG) !important
+}
+
+/* --- Materialien --- */
+.card {
+    background-color: var(--Icon)!important;
+    border-radius: 0px !important;
+}
+.grey.lighten-5 {
+    background-color: var(--Icon)!important;
+}
+
+/* --- Sidebar --- */
+.z-sidenav {
+    background: var(--Icon);
+}
+
+/* Karten */
+.bg-gray-light-h:hover {
+    background-color: var(--LBG);
+    margin: 2px !Important;
+    transition: background-color 50ms ease !important;
+    transition: margin 100ms ease !important;
+}
+.bg-gray-light-h {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px !Important;
+    transition: margin 150ms ease !important;
+    transition: background-color 175ms ease !important;
+}
+
+/* --- BTNs --- */
+.flat-select-button:hover {
+    background-color: var(--Icon) !important;
+    transition: background-color 175ms ease !important;
+}
+.flat-select-button {
+    background-color: rgba(0, 0, 0, 0) !important;
+    transition: background-color 175ms ease !important;
+}
+.btn-pill:hover {
+    background-color: var(--Icon) !important;
+    transition: background-color 175ms ease !important;
+}
+.btn-pill {
+    background-color: rgba(0, 0, 0, 0) !important;
+    transition: background-color 175ms ease !important;
+}
+/* --- Top-NAV --- */
+.white {
+    background-color: var(--Icon) !important;
+}
+
+/* Search bar */
+input {
+    color: var(--Highlight) !important;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--Icon) !important;
+}
+
+/* --- Drop-down --- */
+
+
+.popdown-content   { 
+    background: var(--Icon) !important;
+}
+
+
+a:not(.disabled):hover  { 
+    background: var(--LBG);
+}
+
+svg.icon {
+    fill: var(--Highlight) !important;
+}
+
+
+/* --- Text-Klassen --- */
+p {
+    color: var(--Accent) !Important;
+}
+span {
+    color: var(--Highlight) !Important;
+}
+h1 {
+    color: var(--Highlight) !Important;
+}
+h2 {
+    color: var(--Highlight) !Important;
+}
+h3 {
+    color: var(--Highlight) !Important;
+}
+h4 {
+    color: var(--Highlight) !Important;
+}
+li {
+    color: var(--Highlight) !Important;
+}
+a {
+    color: var(--Accent) !Important;
+    transition: color 250ms ease !important;
+}
+a:hover {
+    color: var(--Highlight) !Important;
+    transition: color 250ms ease !important;
+}
+.primary-text {
+    color: var(--Highlight) !Important;
+}
+.ggb-teal-text {
+    color: var(--Accent) !Important;
+}
+
+.logo_svg__font-color {
+    fill: var(--Accent) !important;
+}
+
+
+/* --- Profil --- */
+
+.user-banner .username-bar {
+    background: var(--Icon);
+}
+.username {
+    color: var(--Highlight) !Important;
+}
