@@ -9,7 +9,6 @@
 html {
     background: var(--LBG) !important
 }
-
 /* --- Materialien --- */
 .card {
     background-color: var(--Icon)!important;
@@ -21,7 +20,17 @@ html {
 
 /* --- Sidebar --- */
 .z-sidenav {
-    background: var(--Icon);
+    background: var(--Icon) !important;
+}
+
+.side-nav, .side-nav-wrapper {
+    background: var(--LBG) !important;
+}
+.side-nav > div > ul li > a.active {
+    background-color: var(--Icon) !important;
+}
+.side-nav > div > ul li > a:hover {
+    background-color: var(--BG) !important;
 }
 
 /* Karten */
@@ -78,10 +87,14 @@ footer {
 }
 
 
-a:not(.disabled):hover  { 
-    background: var(--LBG);
+
+.popdown-button-container > .popdown-content > ul {
+    background: var(--Icon) !important;
 }
 
+.popdown-content > ul > li > a:not(.disabled):hover  { 
+    background: var(--LBG);
+}
 svg.icon {
     fill: var(--Highlight) !important;
 }
@@ -106,6 +119,9 @@ h3 {
 h4 {
     color: var(--Highlight) !Important;
 }
+h5 {
+    color: var(--Highlight) !Important;
+}
 li {
     color: var(--Highlight) !Important;
 }
@@ -116,6 +132,9 @@ a {
 a:hover {
     color: var(--Highlight) !Important;
     transition: color 250ms ease !important;
+}
+#text {
+    color: var(--Highlight) !important;
 }
 .primary-text {
     color: var(--Highlight) !Important;
@@ -136,4 +155,80 @@ a:hover {
 }
 .username {
     color: var(--Highlight) !Important;
+}
+
+
+/* --- Login --- */
+
+.modal {
+    background-color: var(--Icon)
+}
+.modal-footer {
+    background-color: var(--LBG) !important;
+}
+
+/* ----  Gaph editor ---- */
+.avItem, .gwt-TreeItem {
+    background-color: var(--Highlight) !important;
+}
+.GeoGebraFrame {
+    color: var(--Accent) !important;
+    background: var(--Icon) !important;
+}
+.avPplainText {
+    color: var(--Accent) !important;
+}
+.elemText  {
+    color: var(--Accent) !important;
+}
+.avItem {
+    color: var(--Highlight) !important;
+}
+
+
+/* Top NAV */
+
+.GeoGebraFrame, .avItem .gwt-TreeItem {
+    background-color: var(--LBG) !important;
+    background: var(--LBG) !important;
+}
+body {
+    color: var(--Highlight) !important;
+}
+canvas {
+    background: var(--Highlight) !important;
+}
+.gwt-Label {
+    color: var(--Highlight) !important;
+}
+.catLabel {
+    color: var(--Accent) !Important;
+}
+/* Canvas */
+.flatButtonHeader {
+    background-color: var(--Icon) !important;
+}
+.flatButtonHeader:hover {
+    background-color: var(--Accent) !important;
+}
+.matMenu.gwt-PopupPanel {
+    background-color: var(--LBG) !important;
+}
+.gwt-MenuItem:hover {
+    opacity: 1.0;
+    background-color: var(--Icon) !important;
+}
+.GeoGebraFrame .gwt-MenuItem:focus {
+    background: var(--Icon) !important;
+}
+
+/* Side bar */
+
+/*Main*/
+
+
+
+/* Sub */
+.GeoGebraFrame li {
+    background-color: var(--LBG);
 }
