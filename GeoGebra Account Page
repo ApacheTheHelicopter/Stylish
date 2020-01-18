@@ -1,0 +1,55 @@
+/* Account page */
+
+/* header*/
+#ggbHeader {
+    background-color: var(--BG);
+    border-bottom: 0px solid;
+}
+/* dropdown */
+.submenu-popup-container .submenu-popup .submenu-content {
+    background-color: var(--LBG);
+    border: 1px solid var(--LBG);
+    box-shadow: 5px 5px 5px var(--LBG);
+}
+#ggbPage {
+    background-color: var(--BG)
+}
+fieldset.formbox {
+    background-color: var(--BG)
+}
+
+/* inputs */
+
+input[type="text"] {
+    background-color: var(--Icon);
+    border: 0px solid !important;
+}
+select {
+    background-color: var(--Icon) !Important;
+    border: 0px solid !important;
+    color: var(--Highlight) !Important;
+}
+textarea {
+    background-color: var(--Icon) !important;
+    border: 0px;
+}
+
+/* -- Footer -- */
+
+#ggbFooter #ggbFooterTop {
+    border-bottom: 0px solid !Important;
+}
+#ggbFooter {
+    background-color: var(--LBG);
+    border-top: 0px !important;
+}
+button:hover {
+    background: none !important;
+    background-color: var(--LBG) !Important;
+}
+#ggbFooter #ggbFooterMenu ul li.sel a, #ggbFooter #ggbFooterMenu ul li a:hover, #ggbFooter #ggbFooterMenu ul li a:active {
+    color: var(--Highlight) !Important;
+}
+#ggbFooter #ggbFooterMenu ul li.sel a, #ggbFooter #ggbFooterMenu ul li a, #ggbFooter #ggbFooterMenu ul li a {
+    color: var(--Icon) !Important;
+}
