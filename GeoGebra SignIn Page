@@ -1,4 +1,10 @@
-/* Signin Page */
+/* Signin Page 
+
+This goes to -> https://accounts.geogebra.org/user/signin/
+
+(Make another section in Stylus and add the code there)
+
+*/
 
 body {
     background-color: var(--LBG) !important;
