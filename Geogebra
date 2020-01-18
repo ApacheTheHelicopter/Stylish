@@ -1,3 +1,24 @@
+/* A GeoGebra re-color by u/Apache3348
+
+-> https://www.reddit.com/user/Apache_3348
+
+See my other styles
+        --> https://userstyles.org/users/849222 (Not uploading on Userstyles anymore)
+        --> https://github.com/ApacheTheHelicopter/Stylish (Here are the new Styles)
+
+My Patreon (german)
+        --> https://www.patreon.com/apache
+My GitHub
+        --> https://github.com/ApacheTheHelicopter
+
+*/
+/* License info: Feel free to change the style at any time and reupload it 
+(note: Leave this tag here and add your own below) */
+/* Colors
+    Go to color.adobe.com if you want to get some preset color packs
+     You can change these at any given point of time
+      Invert the Accent and Background Color if you want light theme (Not guaranteed to work) */
+
 :root {
     --Accent: #b629f2;
     --BG: #161a26;
@@ -23,7 +44,8 @@ html {
     background: var(--Icon) !important;
 }
 
-.side-nav, .side-nav-wrapper {
+.side-nav,
+.side-nav-wrapper {
     background: var(--LBG) !important;
 }
 .side-nav > div > ul li > a.active {
@@ -46,7 +68,15 @@ html {
     transition: margin 150ms ease !important;
     transition: background-color 175ms ease !important;
 }
-
+.grey.lighten-4 {
+    background-color: var(--LBG) !important;
+}
+.grey.darken-2 {
+    background-color: var(--LBG) !important;
+}
+.grey.lighten-2 {
+    background-color: var(--LBG) !important;
+}
 /* --- BTNs --- */
 .flat-select-button:hover {
     background-color: var(--Icon) !important;
@@ -80,19 +110,32 @@ footer {
 }
 
 /* --- Drop-down --- */
-
-
-.popdown-content   { 
+.popdown-content {
     background: var(--Icon) !important;
 }
 
-
+.popdown-button-container .popdown-content ul li .context-menu-item:not(.disabled):hover,
+.popdown-button-container .popdown-content ul li a:not(.disabled) {
+    background-color: var(--LBG);
+    transition: background-color 150ms ease !important;
+}
+.popdown-button-container .popdown-content ul li .context-menu-item:not(.disabled):hover,
+.popdown-button-container .popdown-content ul li a:not(.disabled):hover {
+    background-color: var(--Icon);
+    transition: background-color 150ms ease !important;
+}
+.flat-select-wrapper .popdown-content .bottom-sheet-container .flat-select-list li a.selected {
+        background-color: var(--Accent);
+}
+.divider {
+    background-color: var(--LBG) !important;
+}
 
 .popdown-button-container > .popdown-content > ul {
     background: var(--Icon) !important;
 }
 
-.popdown-content > ul > li > a:not(.disabled):hover  { 
+.popdown-content > ul > li > a:not(.disabled):hover {
     background: var(--LBG);
 }
 svg.icon {
@@ -146,10 +189,19 @@ a:hover {
 .logo_svg__font-color {
     fill: var(--Accent) !important;
 }
-
-
+.tc-black-medium {
+    color: var(--Accent) !Important;
+}
+.ggb-teal-text.text-darken-3{
+    color: var(--Highlight) !Important;
+}
+.ggb-teal-text.text-darken-2{
+    color: var(--Accent) !Important;
+}
+.ggb-teal-text.text-darken-2:hover {
+    color: var(--Highlight) !Important;
+}
 /* --- Profil --- */
-
 .user-banner .username-bar {
     background: var(--Icon);
 }
@@ -159,44 +211,48 @@ a:hover {
 
 
 /* --- Login --- */
-
 .modal {
     background-color: var(--Icon)
 }
 .modal-footer {
     background-color: var(--LBG) !important;
 }
+.GeoGebraHeader .signIn:hover {
+    background-color: var(--Icon) !important;
+}
+
+
+
+
+
 
 /* ----  Gaph editor ---- */
-.avItem, .gwt-TreeItem {
-    background-color: var(--Highlight) !important;
+.avItem,
+.gwt-TreeItem {
+    background-color: var(--LBG) !important;
 }
-.GeoGebraFrame {
-    color: var(--Accent) !important;
-    background: var(--Icon) !important;
+.marblePanel {
+    background-color: var(--LBG) !important;
 }
-.avPplainText {
-    color: var(--Accent) !important;
-}
-.elemText  {
-    color: var(--Accent) !important;
-}
-.avItem {
+.elemText, .avPlainText, .avDefinition, .canvasDef, .avOutput, .arrowOutputImg  {
     color: var(--Highlight) !important;
 }
 
+.header-open-landscape {
+    background-color: var(--Icon) !important;
+}
+.GeoGebraFrame .AlgebraViewObjectStylebar.withContextMenu .XButton {
+    background-color: rgba(0,0,0,0) !important;
+}
 
 /* Top NAV */
-
-.GeoGebraFrame, .avItem .gwt-TreeItem {
+.GeoGebraFrame,
+.avItem .gwt-TreeItem {
     background-color: var(--LBG) !important;
     background: var(--LBG) !important;
 }
 body {
     color: var(--Highlight) !important;
-}
-canvas {
-    background: var(--Highlight) !important;
 }
 .gwt-Label {
     color: var(--Highlight) !important;
@@ -223,11 +279,7 @@ canvas {
 }
 
 /* Side bar */
-
 /*Main*/
-
-
-
 /* Sub */
 .GeoGebraFrame li {
     background-color: var(--LBG);
