@@ -1,4 +1,10 @@
-/* Account page */
+/* Account page 
+
+This goes to -> https://accounts.geogebra.org/
+
+(Make another section in Stylus and paste the code there)
+
+*/
 
 /* header*/
 #ggbHeader {
