@@ -1,0 +1,30 @@
+/* Signin Page */
+
+body {
+    background-color: var(--LBG) !important;
+}
+
+
+#login {
+    background-color: var(--Icon) !important;
+    border-color: var(--Icon) !important;
+    border-radius: 0px !important;
+}
+
+/*input*/
+
+input{
+    background-color: var(--BG) !important;
+    border: 0px solid !important;
+}
+a.button:hover {
+    background: none;
+    border: 2px solid var(--BG);
+}
+a.button {
+    box-shadow: none;
+    border: 2px solid var(--LBG);
+}
+#login .rightForm {
+    border-left: 1px solid var(--LBG) !important;
+}
