@@ -19,11 +19,49 @@ header {
 footer {
     background: var(--BG) !important;
 }
+.itsl-light-bulletins-list-item-text {
+    color: var(--Accent) !Important;
+}
+.itsl-light-bulletins-timespan{
+    color: var(--Highlight) !Important;
+}
 
+
+/* ------------------ login ----------------- */
+
+.itsl-login .itsl-widget  {
+    background-color: var(--Icon) !important;
+    border: 0px solid;
+}
+.h-highlight {
+    color: #4d0000;
+}
+input {
+    background-color: var(--BG);
+    border: none !important;
+}
 
 
 /* ------------------ Kurse ----------------- */
-
+.coursecard > .coursecard__main:hover {
+    box-shadow: 0 0 0 5px var(--Icon) !important;
+    background-color: var(--LBG) !important;
+    transition: box-shadow 250ms ease !important;
+        transition: background-color 250ms ease !important;
+}
+.coursecard > .coursecard__main {
+    transition: box-shadow 250ms ease !important;
+        transition: background-color 250ms ease !important;
+}
+.coursecard__main {
+    background-color: var(--BG) !important;
+}
+.coursecard__button:hover {
+    background-color: var(--Highlight) !important;
+}
+.coursecard__button {
+    border: 2px solid var(--Icon) !Important;
+}
 .coursecard.aurora-1, .coursecard.pacific-3, .coursecard.smog-3,.coursecard.peach-4, .coursecard.smog-1 {
     background-color: var(--BG) !important;
 }
@@ -248,13 +286,50 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
 }
 
 
-/* Inpout */
+/* Input */
 
 .itsl-process-folder-search > .il-search-box > .il-search-textbox {
     background: var(--BG);
     border: 0px solid;
 }
 
+.ccl-commentmodule-inputarea {
+    background-color: var(--Icon);
+}
+textarea {
+    background-color: var(--BG);
+    border: 0px !important;
+}
+.ccl-button-color-green {
+    background-color: var(--Highlight);
+    box-shadow: 0px 0px 0px;
+    transition: box-shadow 250ms ease;
+}
+.ccl-button-color-green:hover:not([disabled]) {
+    background-color: var(--Highlight);
+    box-shadow: 2px 2px 2px 3px var(--Highlight);
+    transition: box-shadow 250ms ease;
+}
+.itsl-light-bulletins-elementlink-list-item {
+    background-color: var(--Highlight);
+    box-shadow: 0px 0px 0px;
+    transition: box-shadow 250ms ease;
+}
+.itsl-light-bulletins-elementlink-list-item:hover {
+     background-color: var(--Highlight);
+    box-shadow: 2px 2px 2px 3px var(--Highlight);
+    transition: box-shadow 250ms ease;
+}
+.ccl-commentmodule-list {
+    background-color: var(--BG);
+    box-shadow: 0px 0px 0px;
+    transition: box-shadow 250ms ease;
+}
+.ccl-feedback-tip {
+    background-color: var(--Highlight);
+    box-shadow: 0px 0px 0px;
+    transition: box-shadow 250ms ease;
+}
 button, input, optgroup, select, textarea {
     color: var(--Accent) !important;
 }
