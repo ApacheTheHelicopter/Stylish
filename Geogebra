@@ -323,7 +323,7 @@ body {
 }
 /* Canvas */
 input {
-    background-color: var(--Icon) !important;
+    background-color: var(--BG) !important;
 }
 .GeoGebraFrame .MaterialDialogBox .Caption {
     color: var(--Accent);
@@ -353,7 +353,7 @@ input {
 .GeoGebraFrame .algebraSimpleP {
     background: var(--Highlight) !important;
 }
-.algebraPanel, .matAvDesign, .tab {
+.algebraPanel, .matAvDesign {
     background: var(--Highlight) !important;
 }
 canvas {
