@@ -4,6 +4,7 @@
     --Highlight: #F2A35E;
     --Icon: #A65A2E;
     --LBG: #A69076;
+    --tran: #a65a2e57;
 }
 
 
@@ -22,14 +23,13 @@ footer {
 .itsl-light-bulletins-list-item-text {
     color: var(--Accent) !Important;
 }
-.itsl-light-bulletins-timespan{
+.itsl-light-bulletins-timespan {
     color: var(--Highlight) !Important;
 }
 
 
 /* ------------------ login ----------------- */
-
-.itsl-login .itsl-widget  {
+.itsl-login .itsl-widget {
     background-color: var(--Icon) !important;
     border: 0px solid;
 }
@@ -43,15 +43,52 @@ input {
 
 
 /* ------------------ Kurse ----------------- */
+
+.itsl-counter-badge-grey {
+    background-color: var(--BG);
+    border-color: var(--BG);
+}
+
+ul.l-main-menu-items li.l-tab-menu-text.active div.active-shadow, ul.l-main-menu-items li.l-tab-menu-icons.active div.active-shadow {
+    box-shadow: 0px 10px 0 var(--LBG) inset;
+}
+
+.itsl-widget-pager {
+        background-color: var(--tran);
+}
+.ccl-button-plain {
+        background-color: var(--tran);
+}
+/* Aufgaben und ereignisse */
+.il-widget.itsl-cb-tasks2 .tasklist2_container {
+    background-color: var(--tran);
+}
+.itsl-updatestab-wrapper .itsl-cb-activities .itsl-widget-toolbar {
+    background-color: var(--tran);
+}
+.itsl-updatestab-wrapper .il-widgetzone-wideleft-right .il-widget-bottom {
+    background-color: var(--tran);
+}
+.itsl-content-block-empty-state {
+    color: var(--Accent)
+}
+
+.c-dropdownMenu__all {
+    background-color: var(--BG) !Important;
+}
+.c-dropdownMenu__content {
+    background-color: var(--LBG) !important;
+}
+
 .coursecard > .coursecard__main:hover {
     box-shadow: 0 0 0 5px var(--Icon) !important;
     background-color: var(--LBG) !important;
     transition: box-shadow 250ms ease !important;
-        transition: background-color 250ms ease !important;
+    transition: background-color 250ms ease !important;
 }
 .coursecard > .coursecard__main {
     transition: box-shadow 250ms ease !important;
-        transition: background-color 250ms ease !important;
+    transition: background-color 250ms ease !important;
 }
 .coursecard__main {
     background-color: var(--BG) !important;
@@ -62,7 +99,11 @@ input {
 .coursecard__button {
     border: 2px solid var(--Icon) !Important;
 }
-.coursecard.aurora-1, .coursecard.pacific-3, .coursecard.smog-3,.coursecard.peach-4, .coursecard.smog-1 {
+.coursecard.aurora-1,
+.coursecard.pacific-3,
+.coursecard.smog-3,
+.coursecard.peach-4,
+.coursecard.smog-1 {
     background-color: var(--BG) !important;
 }
 .coursecard__info {
@@ -70,18 +111,19 @@ input {
 }
 
 
-.itsl-homepagetabs-tab.active > span, .itsl-homepagetabs-tab:active > span {
+.itsl-homepagetabs-tab.active > span,
+.itsl-homepagetabs-tab:active > span {
     background-color: var(--Icon) !important;
     border-color: var(--Highlight);
 }
 
-.itsl-homepagetabs-tab:not(.active) > span{
+.itsl-homepagetabs-tab:not(.active) > span {
     background-color: var(--BG) !important;
     border-color: var(--Highlight);
 }
 
 
-.itsl-homepagetabs-tab:not(.active):hover > span{
+.itsl-homepagetabs-tab:not(.active):hover > span {
     background-color: var(--LBG) !important;
     border-color: var(--Highlight);
 }
@@ -146,21 +188,57 @@ span {
     color: var(--Accent) !important;
 }
 
+/* ------------------ profil ----------------- */
+.c-profileCard__window {
+    background-color: var(--Icon);
+}
 
+.o-tabcontrol__menu {
+    background-color: var(--BG);
+    border-bottom: 0px solid;
+}
+.o-tabcontrol__page.c-profileCard__messagePage {
+    background-color: var(--BG);
+    border-left: 0px solid;
+}
+.c-profileCard .c-messages {
+    background-color: var(--BG);
+}
+.c-profileCard__about .c-profileCard__label {
+    color: var(--Highlight);
+}
 
+.c-modal__cross {
+    color: var(--BG) !important;
+    transition: color 250ms ease !important;
+}
+.c-modal__cross:hover {
+    color: var(--Highlight) !important;
+    transition: color 250ms ease !important;
+}
+label {
+    color: var(--Accent);
+}
 /* ------------------ body ----------------- */
 h1.ccl-pageheader,
 h1.ccl-pageheader > span,
 h1.ccl-pageheader input.ccl-pageheader-title-editor {
     color: var(--Accent) !important;
 }
-
-
+h2 {
+    color: var(--Accent)!important;
+}
+h3 {
+    color: var(--Accent)!important;
+}
+h4 {
+    color: var(--Accent)!important;
+}
 a {
     color: var(--Accent);
 }
 a:hover {
-    color: var(--Highlight) !important;
+    color: var(--BG) !important;
 }
 
 
@@ -225,13 +303,10 @@ ul.l-personal-menu-dd {
 .o-list-ui__item {
     border-bottom: 1px solid var(--Highlight) !Important;
 }
-.c-messages__footer {
-    background: var(--BG) !important;
-}
+
 
 
 /* --- BTN ---- */
-
 .c-modern__button--cancel > span {
     background-color: var(--Icon) !important;
     transition: background-color 500ms ease !important;
@@ -256,17 +331,21 @@ ul.l-personal-menu-dd {
 
 
 /* Resources */
-
 .itsl-formbox {
-        background-color: var(--LBG) !important;
+    background-color: var(--LBG) !important;
     border: 0px solid !important;
     box-shadow: 0px 0px 0px !important;
 }
 
 .ccl-grid .gridtable tbody tr {
-        background-color: var(--BG) !important;
+    background-color: var(--BG) !important;
 }
-a, a:active, a:focus, a:hover, a:link, a:visited {
+a,
+a:active,
+a:focus,
+a:hover,
+a:link,
+a:visited {
     color: var(--Accent);
 }
 
@@ -287,7 +366,21 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
 
 
 /* Input */
-
+input {
+    background-color: var(--BG) !important;
+}
+.selectize-input {
+    border: 0px solid !important;
+    background-color: var(--LBG);
+    color: var(--Accent) !important;
+}
+.selectize-dropdown {
+    color: var(--Accent) !important;
+    background: var(--BG)
+}
+.option.active {
+    background-color: var(--LBG);
+}
 .itsl-process-folder-search > .il-search-box > .il-search-textbox {
     background: var(--BG);
     border: 0px solid;
@@ -316,7 +409,7 @@ textarea {
     transition: box-shadow 250ms ease;
 }
 .itsl-light-bulletins-elementlink-list-item:hover {
-     background-color: var(--Highlight);
+    background-color: var(--Highlight);
     box-shadow: 2px 2px 2px 3px var(--Highlight);
     transition: box-shadow 250ms ease;
 }
@@ -330,7 +423,11 @@ textarea {
     box-shadow: 0px 0px 0px;
     transition: box-shadow 250ms ease;
 }
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
     color: var(--Accent) !important;
 }
 
@@ -341,53 +438,60 @@ button, input, optgroup, select, textarea {
 
 .c-dropdownMenu__navigation .c-search input:valid {
     background: var(--Highlight);
-        color: var(--BG) !important;
+    color: var(--BG) !important;
     border: 0px solid;
 }
-.c-dropdownMenu__navigation .c-dropdown select:focus, .c-dropdownMenu__navigation .c-dropdown select:hover {
+.c-dropdownMenu__navigation .c-dropdown select:focus,
+.c-dropdownMenu__navigation .c-dropdown select:hover {
     background: var(--Highlight);
-    border-color:rgba(0,0,0,0) ;
+    border-color: rgba(0, 0, 0, 0);
 }
-.c-dropdownMenu__navigation .c-dropdown select, .c-dropdownMenu__navigation .c-dropdown select {
+.c-dropdownMenu__navigation .c-dropdown select,
+.c-dropdownMenu__navigation .c-dropdown select {
     background: var(--Highlight);
-    border-color:rgba(0,0,0,0) ;
+    border-color: rgba(0, 0, 0, 0);
 }
 
-.l-topmenu-searchbox .ccl-searchtextbox-personalmenu input:focus, .l-topmenu-searchbox .ccl-searchtextbox-personalmenu input:hover {
-    border: 0px solid !important; 
+.l-topmenu-searchbox .ccl-searchtextbox-personalmenu input:focus,
+.l-topmenu-searchbox .ccl-searchtextbox-personalmenu input:hover {
+    border: 0px solid !important;
 }
-.l-topmenu-searchbox .ccl-searchtextbox-personalmenu input  {
-    border: 0px solid !important; 
+.l-topmenu-searchbox .ccl-searchtextbox-personalmenu input {
+    border: 0px solid !important;
 }
 
 
 /* Settings */
-
 .ccl-formcontainer .ccl-formpanel-descriptionlabel {
     color: var(--Accent);
 }
-.ccl-formsection-ol input[type="text"]  {
-            background: var(--BG);
-    border: 0px solid !important; 
+.ccl-formsection-ol input[type="text"] {
+    background: var(--BG);
+    border: 0px solid !important;
 }
 
 
 /* Dropdownds */
-
 .c-dropdownMenu__navigation {
-        background: var(--BG);
+    background: var(--BG);
     border-bottom: 0px solid;
 }
 
-.l-menu-course .ccl-dropdownmenu > div > ul > li, .l-menu-project .ccl-dropdownmenu > div > ul > li, .l-menu-yourchildren .ccl-dropdownmenu > div > ul > li  {
-        background: var(--LBG);
+.l-menu-course .ccl-dropdownmenu > div > ul > li,
+.l-menu-project .ccl-dropdownmenu > div > ul > li,
+.l-menu-yourchildren .ccl-dropdownmenu > div > ul > li {
+    background: var(--LBG);
 }
-.l-menu-course .ccl-dropdownmenu > div > ul > li:hover, .l-menu-project .ccl-dropdownmenu > div > ul > li:hover, .l-menu-yourchildren .ccl-dropdownmenu > div > ul > li:hover  {
-        background: var(--BG);
+.l-menu-course .ccl-dropdownmenu > div > ul > li:hover,
+.l-menu-project .ccl-dropdownmenu > div > ul > li:hover,
+.l-menu-yourchildren .ccl-dropdownmenu > div > ul > li:hover {
+    background: var(--BG);
 }
 
 
-.l-menu-course .ccl-dropdownmenu .dropdown-menu-item, .l-menu-project .ccl-dropdownmenu .dropdown-menu-item, .l-menu-yourchildren .ccl-dropdownmenu .dropdown-menu-item  {
+.l-menu-course .ccl-dropdownmenu .dropdown-menu-item,
+.l-menu-project .ccl-dropdownmenu .dropdown-menu-item,
+.l-menu-yourchildren .ccl-dropdownmenu .dropdown-menu-item {
     color: var(--Accent) !important;
 }
 
@@ -395,5 +499,71 @@ button, input, optgroup, select, textarea {
     border-top: 1px var(--BG) solid;
 }
 .c-dropdownMenu__navigation .c-dropdown > select {
-        background-color: var(--Highlight) !important;
+    background-color: var(--Highlight) !important;
+}
+
+
+
+/* --------- Nachrichten ----------*/
+.c-messages__header {
+    border-bottom: 0px solid;
+}
+.ccl-dropdownmenu.ccl-dropdownmenu-modern {
+    background: var(--LBG);
+    border: 2px solid var(--LBG);
+}
+.ccl-dropdownmenu.ccl-dropdownmenu-modern > ul > li > button:focus, .ccl-dropdownmenu.ccl-dropdownmenu-modern > ul > li > button:hover {
+    background-color: var(--Icon);
+}
+.ccl-dropdownmenu > ul > li:not(.h-is-mobile) ~ li {
+    border-top: 0px solid;
+}
+.c-icon--chevron-down {
+    fill: var(--LBG) !important;
+    transition: fill 250ms ease;
+}
+.c-icon--chevron-down:hover {
+    fill: var(--Highlight) !important;
+    transition: fill 250ms ease;
+}
+.c-messages .compose-input-wrapper > .instant-message-editor {
+    background-color: var(--LBG);
+    border: 2px solid var(--BG);
+}
+.c-messages .compose-input-wrapper > .instant-message-editor:focus {
+    border: 2px solid var(--Highlight);
+}
+.c-messages__new > .c-messages__body {
+    background-color: var(--BG);
+}
+.c-conversationcomponent .c-message:hover {
+    background-color: var(--LBG);
+}
+.c-conversationcomponent .c-conversation__text {
+    color: var(--BG);
+}
+.c-messages__metadata > .c-conversation__createdRelative, .c-messages__metadata > .c-messages__thread_timeStamp {
+    color: var(--BG);
+}
+.c-conversationcomponent .c-message {
+    background-color: var(--LBG);
+}
+.c-messages__footer {
+    background: var(--BG) !important;
+    border-top: 4px solid var(--BG);
+    margin: 0px;
+    transition: margin 500ms ease !important;
+}
+.c-messages__footer:hover {
+    background: var(--BG) !important;
+    border-top: 4px solid var(--BG);
+    margin: -5px;
+    transition: margin 500ms ease !important;
+}
+.c-avatar {
+    border: 0px solid;
+}
+a.l-personal-menu-dd-header--button:hover > span {
+    background-color: var(--Icon);
+    border-color: var(--Icon);
 }
