@@ -18,7 +18,14 @@ My GitHub
     Go to color.adobe.com if you want to get some preset color packs
      You can change these at any given point of time
       Invert the Accent and Background Color if you want light theme (Not guaranteed to work) */
+:root {
+    scrollbar-color: var(--BG) var(--LBG);
+}
 
+/*[[W]]*/
+/* /*
+* {
+scrollbar-width: thin;}/**/
 :root {
     --Accent: #b629f2;
     --BG: #161a26;
@@ -125,7 +132,7 @@ footer {
     transition: background-color 150ms ease !important;
 }
 .flat-select-wrapper .popdown-content .bottom-sheet-container .flat-select-list li a.selected {
-        background-color: var(--Accent);
+    background-color: var(--Accent);
 }
 .divider {
     background-color: var(--LBG) !important;
@@ -192,10 +199,10 @@ a:hover {
 .tc-black-medium {
     color: var(--Accent) !Important;
 }
-.ggb-teal-text.text-darken-3{
+.ggb-teal-text.text-darken-3 {
     color: var(--Highlight) !Important;
 }
-.ggb-teal-text.text-darken-2{
+.ggb-teal-text.text-darken-2 {
     color: var(--Accent) !Important;
 }
 .ggb-teal-text.text-darken-2:hover {
@@ -225,24 +232,78 @@ a:hover {
 
 
 
+/* ------------------------------------- */
+/* ------------  Gaph editor ----------- */
+/* ------------------------------------- */
+.elemText,
+.avPlainText,
+.avDefinition,
+.canvasDef,
+.avOutput,
+.arrowOutputImg {
+    color: var(--Icon) !important;
+}
 
-/* ----  Gaph editor ---- */
-.avItem,
-.gwt-TreeItem {
-    background-color: var(--LBG) !important;
+.header-open-landscape
+ {
+    background-color: var(--BG) !important;
+    border: none !Important;
 }
-.marblePanel {
-    background-color: var(--LBG) !important;
+.GeoGebraFrame,
+.AlgebraViewObjectStylebar.withContextMenu .XButton {
+    background-color: var(--BG) !important;
 }
-.elemText, .avPlainText, .avDefinition, .canvasDef, .avOutput, .arrowOutputImg  {
-    color: var(--Highlight) !important;
+.NewRadioButtonTreeItemParent {
+    background-color: var(--Highlight) !important;
 }
+.GeoGebraFrame, .AlgebraViewObjectStylebar.withContextMenu .XButton {
+    background-color: var(--Highlight) !important;
+}
+/* Keyboard */
+.KeyPanel,
+.TabbedKeyBoard.KeyBoard {
+    background-color: var(--BG) !important;
+    border: 1px solid var(--BG) !important;
+}
+.KeyboardSwitcher {
+    background-color: var(--Icon) !important;
+    border: 0px solid var(--BG) !important;
+}
+/* Keyboard tasten */
+.KeyBoardButton {
+    background-color: var(--Icon) !important;
+    border: 0px solid var(--BG) !important;
+}
+.GeoGebraPopup.matDesign.helpPopupAVBottom {
+    background-color: var(--BG) !important;
+}
+.gwt-SplitLayoutPanel-HDragger {
+    background-color: var(--Icon) !important;
+    border: 0px solid var(--BG) !important;
+    box-shadow: none !important;
+}
+.gwt-Button:hover {
+    background-color: var(--BG) !important;
+}
+.gwt-Button {
+   color: var(--Accent) !important;
+}
+/* ------------------------------------- */
+/* ------------  /Gaph editor ----------- */
+/* ------------------------------------- */
 
-.header-open-landscape {
+/* side nav */
+
+.GeoGebraFrame, .floatingMenu, .gwt-StackPanel, .gwt-StackPanelItem {
     background-color: var(--Icon) !important;
 }
-.GeoGebraFrame .AlgebraViewObjectStylebar.withContextMenu .XButton {
-    background-color: rgba(0,0,0,0) !important;
+.GeoGebraFrame, .gwt-StackPanel, .gwt-StackPanelContent {
+    background-color: var(--Icon) !important;
+}
+
+/*tabellen*/
+.GeoGebraFrame .emptyTableImageWrap {
+    background-color: var(--Icon);
 }
 
 /* Top NAV */
@@ -255,12 +316,24 @@ body {
     color: var(--Highlight) !important;
 }
 .gwt-Label {
-    color: var(--Highlight) !important;
+    color: var(--LBG) !important;
 }
 .catLabel {
     color: var(--Accent) !Important;
 }
 /* Canvas */
+input {
+    background-color: var(--Icon) !important;
+}
+.GeoGebraFrame .MaterialDialogBox .Caption {
+    color: var(--Accent);
+}
+.GeoGebraFrame .gwt-PopupPanelGlass {
+    background-color: var(--BG);
+}
+.GeoGebraFrame .MaterialDialogBox {
+    background-color: var(--Highlight) !important;
+}
 .flatButtonHeader {
     background-color: var(--Icon) !important;
 }
@@ -276,6 +349,17 @@ body {
 }
 .GeoGebraFrame .gwt-MenuItem:focus {
     background: var(--Icon) !important;
+}
+.GeoGebraFrame .algebraSimpleP {
+    background: var(--Highlight) !important;
+}
+.algebraPanel, .matAvDesign, .tab {
+    background: var(--Highlight) !important;
+}
+canvas {
+    color: var(--Highlight) !important;
+    fill: var(--Highlight) !Important;
+    background: var(--Highlight) !Important;
 }
 
 /* Side bar */
