@@ -1,14 +1,37 @@
+/* A WebUntis re-color by u/Apache3348
+
+-> https://www.reddit.com/user/Apache_3348
+
+See my other styles
+        --> https://userstyles.org/users/849222 (Not uploading on Userstyles anymore)
+        --> https://github.com/ApacheTheHelicopter/Stylish (Here are the new Styles)
+
+My Patreon (german)
+        --> https://www.patreon.com/apache
+My GitHub
+        --> https://github.com/ApacheTheHelicopter
+
+*/
+/* License info: Feel free to change the style at any time and reupload it 
+(note: Leave this tag here and add your own below) */
+/* Colors
+    Go to color.adobe.com if you want to get some preset color packs
+     You can change these at any given point of time
+      Invert the Accent and Background Color if you want light theme (Not guaranteed to work) */
+
+
+
 :root {
-    --BG: #27455c;
-    /* Background */
-    --LBG: #45757d;
-    /* Light-Background */
-    --Accent: #d1e0d3;
-    /* Accent color for Text, should fit with both backgrounds */
-    --Highlight: #99bfaa;
-    /* Highlight color, should fit with dark background */
-    --Icon: #6c9e93;
-    /* Icon Color, should fit with light background */
+	--BG: #27455c;
+	/* Background */
+	--LBG: #45757d;
+	/* Light-Background */
+	--Accent: #d1e0d3;
+	/* Accent color for Text, should fit with both backgrounds */
+	--Highlight: #99bfaa;
+	/* Highlight color, should fit with dark background */
+	--Icon: #6c9e93;
+	/* Icon Color, should fit with light background */
 }
 
 
@@ -16,142 +39,281 @@
 .header,
 .footer,
 .body {
-    background-color: var(--BG) !important;
+	background-color: var(--BG) !important;
 }
 html {
-    background: var(--BG) !Important;
+	background: var(--BG) !Important;
 }
 
-::after
-body::before {
-    background: var(--BG) !important;
+::after body::before {
+	background: var(--BG) !important;
 }
 
 .un-page {
-    background-color: var(--LBG);
+	background-color: var(--LBG);
+}
+
+/*----------- Standard klassen ---------*/
+th {
+	color: var(--Accent) !important;
+}
+td {
+	color: var(--Accent) !important;
+}
+p {
+	color: var(--Accent);
+}
+h1 {
+	color: var(--Highlight) !important;
+}
+h2 {
+	color: var(--Accent);
+}
+h3 {
+	color: var(--Accent);
+}
+h4 {
+	color: var(--Accent) !important;
+}
+h5 {
+	color: var(--Accent);
+}
+a {
+	color: var(--LBG);
+}
+a:hover {
+	color: var(--Highlight);
+}
+#text {
+	color: var(--Accent) !important;
+}
+.un-login-form__change-school, .form-group {
+	color: var(--Accent) !important;
+}
+/*----------- Login ---------*/
+main .un-app__welcome {
+	background-color: var(--BG);
 }
 
 
+.row,
+.justify-content-sm-center,
+.un-app__visited-schools {
+	background: var(--Icon);
+}
+.untis-bootstrap a {
+	color: var(--Icon) !important;
+}
 
+/*----------- Input ---------*/
+input {
+	background: var(--LBG) !important;
+}
+.Select-control {
+	background: var(--LBG) !important;
+	border-bottom: 2px solid var(--LBG) !important;
+}
+
+.Select-arrow-zone {
+	background: var(--LBG) !important;
+}
+.Select-arrow-zone > button:hover > i {
+	color: var(--Highlight);
+	transition: color 250ms ease;
+}
+.Select-arrow-zone > button > i {
+	color: var(--Accent);
+	transition: color 250ms ease;
+}
+.untis-bootstrap [type="password"], .form-control {
+	border-bottom: 0px solid !important;
+}
+
+/* Schule select */
+.card {
+	background-color: var(--BG);
+	transition: background-color 250ms ease;
+	border: none !important;
+}
+.card:hover {
+	background-color: var(--LBG);
+	transition: background-color 250ms ease;
+	border: none !important;
+}
+.un-visited-school__name small {
+	color: var(--Accent);
+}
+
+/*----------- Homepage ---------*/
+.un-dashboard-widget.panel {
+	background-color: var(--BG);
+	box-shadow: 0px 3px 10px #3f3d3da6 !important;
+}
+.un-empty {
+	background-color: var(--BG) !important;
+}
+
+
+.untis-bootstrap .list-group-item {
+	background-color: var(--Icon);
+}
+.untis-bootstrap a.list-group-item, .untis-bootstrap button.list-group-item {
+	color: var(--Highlight);
+}
+
+.un-dashboard-widget.panel .un-dashboard-widget__header--clickable:hover {
+	background-color: var(--LBG);
+}
+
+
+.untis-bootstrap .table {
+	background-color: var(--LBG);
+}
+.untis-bootstrap .table > thead tr > th {
+	background-color: var(--Icon);
+}
+.un-table__row--clickable:hover {
+	background-color: var(--Icon) !important;
+	transition: background-color 250ms ease;
+}
+.un-table__row--clickable {
+	background-color: var(--LBG) !important;
+	transition: background-color 250ms ease;
+}
 /*-----------Header---------*/
 /*Datum*/
-
-.Select--single > .Select-control .Select-value, .Select-placeholder {
-    color: var(--Icon);
+.Select--single > .Select-control .Select-value,
+.Select-placeholder {
+	color: var(--Icon);
 }
 .untis-bootstrap .un-app-header.navbar .navbar-right .Select .Select-control {
-    background-color: var(--Icon);
-
+	background-color: var(--Icon);
 }
 
 .untis-bootstrap .un-app-header.navbar .navbar-brand h1 {
-    color: var(--Accent);
-    
+	color: var(--Accent);
 }
 
 /*Icons*/
 .untis-bootstrap .un-app-header.navbar .navbar-right .un-navlink {
-    color: var(--Icon);
+	color: var(--Icon);
 }
 /*logout*/
-.untis-bootstrap .un-app-header.navbar .navbar-right .btn-login, .untis-bootstrap .un-app-header.navbar .navbar-right .btn-logout {
-    background-color: var(--Icon);
-    border-color: var(--Highlight);
-    
+.untis-bootstrap .un-app-header.navbar .navbar-right .btn-login,
+.untis-bootstrap .un-app-header.navbar .navbar-right .btn-logout {
+	background-color: var(--Icon);
+	border-color: var(--Highlight);
 }
 
 .untis-bootstrap .un-app-header.navbar {
-    background-color: var(--LBG);
-          box-shadow: 0px 10px 30px #27455c42;
+	background-color: var(--LBG);
+	box-shadow: 0px 10px 30px #27455c42;
 }
 
 
 .un-timetable-page__header {
-    background-color: var(--BG) !important;
+	background-color: var(--BG) !important;
 }
 
 .un-page__header {
-    background-color: var(--Icon);
+	background-color: var(--Icon);
 }
 
 
 
 /*Buttons*/
-.untis-bootstrap .nav-tabs > li > a:focus:hover, .untis-bootstrap .nav-tabs > li > a:hover {
-    color: var(--Highlight) !important;
-    box-shadow: var(--Highlight) !important;
+.untis-bootstrap .nav-tabs > li > a:focus:hover,
+.untis-bootstrap .nav-tabs > li > a:hover {
+	color: var(--Highlight) !important;
+	box-shadow: var(--Highlight) !important;
 }
-.untis-bootstrap .nav-tabs > li > a, .untis-bootstrap .nav-tabs > li > a {
-    background-color: var(--Icon) !important;
+.untis-bootstrap .nav-tabs > li > a,
+.untis-bootstrap .nav-tabs > li > a {
+	background-color: var(--Icon) !important;
 }
-.untis-bootstrap .nav-tabs > li > a:focus:hover, .untis-bootstrap .nav-tabs > li > a:hover {
-    background-color: var(--LBG) !important;
+.untis-bootstrap .nav-tabs > li > a:focus:hover,
+.untis-bootstrap .nav-tabs > li > a:hover {
+	background-color: var(--LBG) !important;
 }
 span {
-    color: var(--Accent) !important;
+	color: var(--Accent) !important;
 }
 
 /*-----------Sidebar---------*/
-
-
 .untis-bootstrap .un-app-nav {
-    background-color: var(--LBG) !important;
-  box-shadow: 1px 1px 30px #27455c99;
+	background-color: var(--LBG) !important;
+	box-shadow: 1px 1px 30px #27455c99;
 }
 .untis-bootstrap .un-app-nav .un-navlink {
-    color: var(--Accent) !important;
+	color: var(--Accent) !important;
 }
 .untis-bootstrap .un-app-nav .un-navlink:hover {
-    color: var(--Accent) !important;
-    background-color: var(--Icon) !important;
+	color: var(--Accent) !important;
+	background-color: var(--Icon) !important;
 }
-.untis-bootstrap .un-app-nav .un-navlink--active, .untis-bootstrap .un-app-nav .un-navlink--active .un-navlink__label, .untis-bootstrap .un-app-nav .un-navlink--active:focus, .untis-bootstrap .un-app-nav .un-navlink--active:focus .un-navlink__label, .untis-bootstrap .un-app-nav .un-navlink--active:hover, .untis-bootstrap .un-app-nav .un-navlink--active:hover .un-navlink__label {
-    background-color: var(--Icon);
+.untis-bootstrap .un-app-nav .un-navlink--active,
+.untis-bootstrap .un-app-nav .un-navlink--active .un-navlink__label,
+.untis-bootstrap .un-app-nav .un-navlink--active:focus,
+.untis-bootstrap .un-app-nav .un-navlink--active:focus .un-navlink__label,
+.untis-bootstrap .un-app-nav .un-navlink--active:hover,
+.untis-bootstrap .un-app-nav .un-navlink--active:hover .un-navlink__label {
+	background-color: var(--Icon);
 }
 
 /*-----------Stundenplan---------*/
-
-
 /*Datum*/
-
 .untis-bootstrap .form-control {
-    background-color: var(--LBG);
+	background-color: var(--LBG);
 }
-.Select.is-disabled > .Select-control{
-    background-color: var(--LBG);
+.Select.is-disabled > .Select-control {
+	background-color: var(--LBG);
 }
 /*Buttons*/
 .untis-bootstrap .btn-default {
-    background: var(--Icon);
+	background: var(--Icon);
 }
 .untis-bootstrap .btn-default:hover {
-    background: var(--Highlight);
+	background: var(--Highlight);
 }
 
 .un-timetable-page__body {
-    background: var(--BG) !important;
+	background: var(--BG) !important;
 }
 .un-timetable {
-    background: var(--BG) !important;
-    color: var(--Highlight) !important;
+	background: var(--BG) !important;
+	color: var(--Highlight) !important;
 }
 
 /*Block*/
 .renderedEntry {
-    background-color: var(--LBG) !important;
-    transition: background-color 1000ms ease !important;
-    margin: 0px !important;
-
+	background-color: var(--LBG) ;
+	transition: background-color 1000ms ease !important;
+	margin: 0px !important;
 }
 .renderedEntry:hover {
-    background-color: var(--Icon) !important;
-    transition: background-color 10ms ease !important;
-    margin: 2px !important;
+	background-color: var(--Icon) !important;
+	transition: background-color 10ms ease !important;
+	margin: 2px !important;
+}
 
+
+/* Werbung */
+.un-ad-widget__content, .un-ad-widget__content__mobile, .un-ad-widget__content__messenger {
+	background: var(--BG);
+}
+
+/* ---- Footer ---- */
+.un-footer {
+	background-color: var(--LBG);
+}
+.un-footer__item a:hover {
+	background-color: var(--BG);
+	border-radius: 5px;
 }
 
 
 
+/* 
 
 .un-timetable-page__update-timestamp {
     color: var(--Accent);
