@@ -1,5 +1,4 @@
 /* Theme */
-
 :root {
 	--BG: #3e606f17;
 	--LBG: #3e606f17;
@@ -14,30 +13,27 @@
 /* BG-image
 https://images.unsplash.com/photo-1578691907917-34bf4fef8424?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80
 */
-
-
 /* ------------------ Von mir ----------------- */
-
 /* BG change */
 .im_page_wrap {
-	background-image: 
-		linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)), 
-		url("https://images.unsplash.com/photo-1544940801-35a305f23c29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQzMzEwfQ&auto=format&fit=crop&w=1350&q=80") !important;
-		background-size: cover !important;
+	background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),
+	url("https://images.unsplash.com/photo-1544940801-35a305f23c29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQzMzEwfQ&auto=format&fit=crop&w=1350&q=80") !important;
+	background-size: cover !important;
 	background-repeat: no-repeat !important;
-	background-position: center center !important;	
+	background-position: center center !important;
 }
 
 
 
 /* ------------- Header --------------- */
 /* ------------- ------ --------------- */
-
-.tg_head_split, .tg_head_main_wrap {
+.tg_head_split,
+.tg_head_main_wrap {
 	background: var(--solid) !important;
 	border-bottom: none !important;
 }
-.tg_head_logo_wrap, a.tg_head_btn.dropdown-toggle[aria-expanded="true"] { 
+.tg_head_logo_wrap,
+a.tg_head_btn.dropdown-toggle[aria-expanded="true"] {
 	background: var(--solid) !important;
 	border-right: none !important;
 	transition: background 250ms ease !important;
@@ -46,7 +42,7 @@ a.tg_head_btn.dropdown-toggle:hover {
 	background: var(--Icon) !important;
 	transition: background 250ms ease !important;
 }
-.tg_head_logo_dropdown.open .dropdown-menu{
+.tg_head_logo_dropdown.open .dropdown-menu {
 	background: var(--solid);
 	transition: background 250ms ease !important;
 }
@@ -69,15 +65,16 @@ i.icon.icon-tg-title::before {
 	color: var(--Accent) !important;
 	content: "TelegramGang" !important;
 }
-.dropdown.open .tg_head_btn, .tg_head_btn:hover {
+.dropdown.open .tg_head_btn,
+.tg_head_btn:hover {
 	background: var(--Icon) !important;
 	transition: background 250ms ease;
 	border-bottom: none !important;
 }
-.dropdown.open .tg_head_btn, .tg_head_btn {
+.dropdown.open .tg_head_btn,
+.tg_head_btn {
 	background: var(--solid) !important;
 	transition: background 250ms ease;
-	
 }
 .tg_head_peer_dropdown .dropdown-menu {
 	background: var(--solid);
@@ -91,7 +88,7 @@ i.icon.icon-tg-title::before {
 }
 .tg_head_peer_dropdown .dropdown-menu > li > a {
 	color: var(--Accent) !important;
-	
+
 	transition: color 250ms ease;
 }
 /* ------------- Side-NAV --------------- */
@@ -114,38 +111,63 @@ input.form-control.im_dialogs_search_field.active {
 .im_dialogs_scrollable_wrap .active a.im_dialog {
 	background-color: var(--Accent) !important;
 }
-
+/* ------------- Settings --------------- */
+/* ------------- ------ --------------- */
+.md_modal_head {
+	color: var(--Text);
+	background: var(--BG) !important;
+		background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),
+	url("https://images.unsplash.com/photo-1544940801-35a305f23c29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQzMzEwfQ&auto=format&fit=crop&w=1350&q=80") !important;
+	background-size: 250% !important;
+	background-repeat: no-repeat !important;
+	background-position: center -400px !important;
+}
+.md_modal_body {
+	background: var(--solid) !important;
+	background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),
+	url("https://images.unsplash.com/photo-1544940801-35a305f23c29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQzMzEwfQ&auto=format&fit=crop&w=1350&q=80") !important;
+	background-size: 250% !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+}
+.md_modal_section_param_value, .md_modal_section_param_name, .md_modal_section_link {
+	color: var(--Text) !important;
+}
 /* ------------- Nachrichten --------------- */
 /* ------------- ------ --------------- */
-
-
-.im_message_author  {
+/* wide screen machen */
+.im_history.im_history_selectable {
+	width: 1000px !important;
+	left: 35% !important;
+	max-width: 1200px !important;
+}
+.im_message_wrap {
+	padding: 0px 0px 5px !important;
+	max-width: 7000px !important;
+}
+.im_message_author {
 	color: var(--Icon) !important;
 }
 /* audio nachrichten */
-.im_message_body.im_message_body_media > div[my-message-body="historyMessage"]{
+.im_message_body.im_message_body_media > div[my-message-body="historyMessage"] {
 	background: var(--LBG) !important;
 }
 .im_message_audio {
 	background: var(--BG) !important;
 	border-radius: 10px !important;
 }
-
 .im_message_body {
 	box-shadow: none !important;
 	padding: 20px !important
 }
-.im_content_message_wrap.im_message_out > .im_message_body{
+.im_content_message_wrap.im_message_out > .im_message_body {
 	background: var(--out) !important;
 }
-.im_content_message_wrap.im_message_in > .im_message_body{
+.im_content_message_wrap.im_message_in > .im_message_body {
 	background: var(--in) !important;
 }
 .im_message_text {
 	color: var(--Text) !important;
-}
-.im_history_message_wrap.im_grouped {
-	padding: 10px !important;
 }
 .composer_rich_textarea {
 	color: var(--Text) !important;
@@ -154,21 +176,23 @@ input.form-control.im_dialogs_search_field.active {
 	background: var(--BG) !important;
 	border-radius: 20px !important;
 }
-
 .im_message_unread_split {
 	background: var(--LBG);
 	border-radius: 50px !important;
 	color: var(--Accent);
 }
 
-/* Zitieren */
 
+/* Zitieren */
 .im_message_body.im_message_body_media > a.im_message_reply_wrap {
 	background: var(--Icon) !important;
 	box-shadow: none !important;
 	border-radius: 5px !important;
 }
-
+.im_content_message_wrap.im_message_out > .im_message_meta.pull-right.text-right {
+	left: 800px !important;
+	text-align: left !important;
+}
 
 /* Ausgewählte Nachrichten */
 .im_message_selected {
@@ -179,7 +203,7 @@ input.form-control.im_dialogs_search_field.active {
 	transition: box-shadow 250ms ease !important;
 	box-shadow: 5px 0px 10px var(--solid) !important;
 }
-.im_edit_panel_wrap.clearfix:hover{
+.im_edit_panel_wrap.clearfix:hover {
 	background: var(--Icon) !important;
 	transition: box-shadow 250ms ease !important;
 	box-shadow: 5px 0px 20px var(--solid) !important;
@@ -218,16 +242,13 @@ button.btn.btn-md.im_submit.im_submit_send {
 }
 
 /* ------------------ Vom russen ----------------- */
-
 .im_message_text > strong {
 	font-weight: 600;
 }
 .im_message_text > em {
 	font-style: normal;
 }
-.im_message_body.im_message_body_media > div[my-message-body="historyMessage"] {
-	background: #fff;
-}
+
 .im_submit {
 	color: #b5b5b5;
 }
@@ -395,7 +416,7 @@ a.pull-right.im_panel_peer_photo.peer_photo_init {
 }
 .im_message_body {
 	display: inline-block!important;
-	max-width: 454px
+	max-width: 554px
 }
 .im_dialogs_scrollable_wrap a.im_dialog {
 	padding: 10px 26px!important
@@ -451,7 +472,7 @@ div > div > img,
 .im_grouped_fwd .im_message_body,
 .im_grouped_fwd_short .im_message_body,
 .im_grouped_short .im_message_body {
-	border-radius: 15px
+	border-radius: 10px
 }
 .im_content_message_wrap.im_message_out > .im_message_body {
 	background: #d8ebff;
@@ -569,7 +590,7 @@ img.im_service_message_photo_thumb {
 .im_message_body > a.im_message_reply_wrap {
 	background: #00000008;
 	padding: 10px 15px;
-	margin: 4px -15px 7px
+	margin: 4px -15px 10px
 }
 .im_grouped .im_message_body > a.im_message_reply_wrap,
 .im_grouped_short .im_message_body > a.im_message_reply_wrap,
@@ -1034,12 +1055,12 @@ li.im_dialog_wrap {
 .im_grouped_fwd .im_message_body,
 .im_grouped_fwd_short .im_message_body {
 	margin-left: 50px;
-	margin-top: -1px
+	margin-top: -10px
 }
 .im_history_message_wrap.im_grouped > div > div > .im_content_message_wrap.im_message_out > .im_message_body.im_message_body_media,
 .im_history_message_wrap.im_grouped_short > div > div > .im_content_message_wrap.im_message_out > .im_message_body,
 .im_history_message_wrap.im_grouped_short > div > div > .im_message_body.im_message_body_media {
-	margin: 2px 50px 1px 0
+	margin: 2px 60px 1px 0
 }
 .im_history_message_wrap.im_message_selected > .im_message_outer_wrap.hasselect > div > div > .im_message_body {
 	background: #e7e7e7;
@@ -1251,41 +1272,26 @@ i.icon.icon-tg-title:before {
 
 
 
-
-
-
 .im_message_meta.pull-right.text-right.noselect {
 	position: absolute;
-	bottom: -14px;
+	bottom: 20px;
 	font-size: 12px;
-	left: 56px;
+	left: -10px;
+	float: left !important;
 }
 .im_message_date {
 	display: inline;
 }
 .im_content_message_wrap.im_message_out > .im_message_meta.pull-right.text-right {
-	position: absolute;
-	bottom: -17px;
-	font-size: 12px;
-	right: 67px;
+	position: absolute !important;
+	bottom: -5px !important;
+	font-size: 12px !important;
+	left: 950px !important;
+	float: right !important;
 }
 
-.im_history_message_wrap.im_grouped > div > div > div > div > div > div > div > div > a > img.im_message_photo_thumb,
-.im_grouped_short .im_message_body,
-.im_grouped .im_message_body,
-.im_grouped_fwd .im_message_body,
-.im_grouped_fwd_short .im_message_body,
-.im_history_message_wrap.im_message_selected > .im_message_outer_wrap.hasselect > div > div > .im_message_body,
-.im_grouped_short .im_message_body {
-	box-shadow: -8px 0px 0px #fff, 25px 0px 0px #fff;
-}
-.im_history_message_wrap.im_message_selected > .im_message_outer_wrap.hasselect > div > .im_content_message_wrap.im_message_out > .im_message_body,
-.im_content_message_wrap.im_message_out > .im_message_body,
-.im_content_message_wrap.im_message_out > div > div > div > div > div > a.im_message_photo_thumb,
-.im_history_message_wrap.im_grouped > div > div > .im_content_message_wrap.im_message_out > div > div > div > div > div > div > .im_message_document,
-.im_history_message_wrap.im_grouped_short > div > div > .im_content_message_wrap.im_message_out > .im_message_body {
-	box-shadow: 8px 0px 0px #fff, -25px 0px 0px #fff;
-}
+
+
 .im_history_message_wrap {
 	margin-top: 30px;
 }
@@ -1819,7 +1825,8 @@ span[my-i18n="conversation_media_audio"]:before {
 	font-size: 15px !important;
 	line-height: 21px!important;
 	padding: 10px 15px;
-	background: var(--LBG); !important;
+	background: var(--LBG);
+	!important;
 	margin-top: -1px !important;
 	border: 1px solid var(--LBG);
 	border-top: 0;
