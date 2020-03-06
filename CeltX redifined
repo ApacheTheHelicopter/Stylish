@@ -10,6 +10,10 @@ My Patreon (german)
         --> https://www.patreon.com/apache
 
 
+https://images.unsplash.com/photo-1583346398313-5074c4dda42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80
+
+https://i.imgur.com/GWhY2bp.png
+
 */
 /* License info: Feel free to change the style at any time and reupload it 
 (note: Leave this tag here and add your own below) */
@@ -24,6 +28,8 @@ My Patreon (german)
     --Highlight: #f2a35e;
     --Icon: #a65a2e;
 	--BGTrans: #262626ab;
+	--wallpaper: 
+		url("https://images.unsplash.com/photo-1526488807855-309186804587?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
 }
 
 /* Color Section END */
@@ -62,8 +68,102 @@ a {
 	color: var(--Accent);
 	transition: color 150ms ease;
 }
-
-
+/* BG */
+#projectlist-container,
+#scroll-container {
+    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper) !important;
+    color: var(--Accent);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+/* editor bg */
+.cx-pm-editor .ProseMirror-menubar-wrapper,
+.cx-pm-editor .ProseMirror-wrapper,
+.cx-pm-editor .cx-screenplay.cxscript,
+body{
+    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper) !important;
+    color: var(--Accent);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+/* Szenen */
+.scenenav-list-item {
+    color: var(--Accent) !important;
+	border: none !important;
+	border-radius: 0px 0px 5px 0px!important;
+	transition: background-image 250ms ease !important;
+    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper);
+}
+.scenenav-list-item .scenenav-list-link {
+    color: var(--Highlight);
+}
+.scenenav-list-item.highlight {
+    color: var(--BG) !important;
+	transition: background-image 250ms ease !important;
+	border: none !important;
+    background-image: linear-gradient(rgba(12, 12, 12, .2), rgba(12, 12, 12, .2)),  var(--wallpaper);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 200%;
+}
+.scenenav-list-item-move-hover {
+	color: var(--BG) !important;
+	transition: background-image 250ms ease !important;
+	border: none !important;
+    background-image: linear-gradient(rgba(12, 12, 12, .2), rgba(12, 12, 12, .2)),  var(--wallpaper);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 200%;
+}
+/* BG rework */
+.cx-projectpalette-menu-item{
+	background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper);
+	background-repeat: no-repeat;
+	background-position: 0px -50px;
+	background-size: 200%;
+	opacity: 0.8;
+	transition: opacity 250ms ease;
+}
+.cx-projectpalette-menu-item:hover {
+	background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper);
+	background-repeat: no-repeat;
+	background-position: 0px -50px;
+	background-size: 200%;
+	opacity: 1;
+	transition: opacity 250ms ease;
+}
+/* --------------  Statistics  ------------ */
+.editor-status-bar {
+    color: var(--Accent) !important;
+}
+#statusBarDiv {
+    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper);
+	background-color: rgba(0, 0, 0,0) !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 400%;
+	
+}
+.file-header-content-bg {
+	background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper)!important;
+    color: var(--Accent);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: cover;
+	opacity: .6;
+	transition: opacity 250ms ease !important;
+}
+.file-header-content-bg:hover {
+	background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  var(--wallpaper) !important;
+    color: var(--Accent);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: cover;
+	opacity: 1;
+	transition: opacity 250ms ease !important;
+}
 /* --------------  Titelseite  ------------ */
 
 textarea {
@@ -269,15 +369,6 @@ label.togglebox input[type="checkbox"] ~ .toggle::before {
     display: none !important;
 }
 
-/* BG */
-#projectlist-container,
-#scroll-container {
-        background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  url("https://i.imgur.com/GWhY2bp.png") !important;
-    color: var(--Accent);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-}
 
 .studiohead-container {
 	border-radius: 10px;
@@ -351,17 +442,7 @@ label.togglebox input[type="checkbox"] ~ .toggle::before {
     color: var(--Accent) !important;
 }
 /* --------------  Script Editor  ------------ */
-/* editor bg */
-.cx-pm-editor .ProseMirror-menubar-wrapper,
-.cx-pm-editor .ProseMirror-wrapper,
-.cx-pm-editor .cx-screenplay.cxscript,
-body{
-    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  url("https://i.imgur.com/GWhY2bp.png") !important;
-    color: var(--Accent);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-}
+
 
 /* Page */
 .cx-pm-editor .cx-screenplay div.page {
@@ -416,24 +497,7 @@ body{
 #toolbar-container * {
 	background-color: transparent !important;
 }
-.file-header-content-bg {
-	    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  url("https://i.imgur.com/GWhY2bp.png") !important;
-    color: var(--Accent);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	background-size: 150%;
-	opacity: .6;
-	transition: opacity 250ms ease !important;
-}
-.file-header-content-bg:hover {
-	    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  url("https://i.imgur.com/GWhY2bp.png") !important;
-    color: var(--Accent);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	background-size: 150%;
-	opacity: 1;
-	transition: opacity 250ms ease !important;
-}
+
 #toolbar-container * >.file-menu-dropdown-item {
 	background-color: var(--LBG) !important;
 	border: 1px solid var(--LBG) !important;
@@ -455,40 +519,4 @@ body{
 .cx-projectpalette-title {
     color: var(--Accent) !important;
     background-color: var(--Icon);
-}
-/* Szenen */
-.scenenav-list-item {
-    color: var(--Accent) !important;
-	border: none !important;
-	border-radius: 0px 0px 5px 0px!important;
-	transition: background-image 250ms ease !important;
-    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  url("https://i.imgur.com/GWhY2bp.png");
-}
-.scenenav-list-item .scenenav-list-link {
-    color: var(--Highlight);
-}
-.scenenav-list-item.highlight {
-    color: var(--BG) !important;
-	transition: background-image 250ms ease !important;
-	border: none !important;
-    background-image: linear-gradient(rgba(12, 12, 12, .2), rgba(12, 12, 12, .2)),  url("https://i.imgur.com/GWhY2bp.png");
-}
-.scenenav-list-item-move-hover {
-	color: var(--BG) !important;
-	transition: background-image 250ms ease !important;
-	border: none !important;
-    background-image: linear-gradient(rgba(12, 12, 12, .2), rgba(12, 12, 12, .2)),  url("https://i.imgur.com/GWhY2bp.png");
-}
-/* BG rework */
-.cx-projectpalette-menu-item{
-	background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  url("https://i.imgur.com/GWhY2bp.png") 
-}
-/* --------------  Statistics  ------------ */
-.editor-status-bar {
-    color: var(--Accent) !important;
-}
-#statusBarDiv {
-    background-image: linear-gradient(rgba(12, 12, 12, .5), rgba(8, 8, 8, .5)),  url("https://i.imgur.com/GWhY2bp.png");
-	background-color: rgb(0, 0, 0) !important;
-	
 }
