@@ -5,6 +5,7 @@
     --Icon: #A65A2E;
     --LBG: #A69076;
     --tran: #a65a2e57;
+	--tran2: #a65a2ebf;
 }
 
 
@@ -28,6 +29,28 @@ footer {
 }
 
 
+/* ------------------ einstellungen ----------------- */
+
+.categorybox {
+	background: var(--LBG) !important;
+	border: none !important;
+}
+h2.skin {
+	border: none !important;
+}
+ .categorybox48 li {
+	background: var(--LBG) !important;
+	border: none !important;
+}
+.ccl-button-color-grey {
+	background: var(--Icon) !important;
+	border: none !important;
+}
+.ccl-button-color-grey:hover {
+	background: var(--LBG) !important;
+	border: none !important;
+}
+
 /* ------------------ login ----------------- */
 .itsl-login .itsl-widget {
     background-color: var(--Icon) !important;
@@ -43,6 +66,11 @@ input {
 
 
 /* ------------------ Kurse ----------------- */
+
+.itsl-cb-planner > .il-widget-bottom {
+	color: var(--Accent);
+}
+
 
 .itsl-counter-badge-grey {
     background-color: var(--BG);
@@ -128,6 +156,48 @@ ul.l-main-menu-items li.l-tab-menu-text.active div.active-shadow, ul.l-main-menu
     border-color: var(--Highlight);
 }
 
+.itsl-cb-planner > .il-widget-bottom {
+	background: var(--BG);
+	border: 2px solid var(--Icon) !important;
+}
+
+.itsl-single-plan .itsl-single-plan-elements .itsl-single-plan-element {
+	background: var(--Icon);
+	border: none;
+}
+
+.h-box {
+	background: var(--LBG);
+	border: none;
+}
+.ccl-fl-item {
+	background: var(--Icon);
+	border: none;
+}
+.ccl-fl-item:hover {
+	background: var(--Highlight);
+	border: none;
+}
+.ccl-dropdownmenu:not(.ccl-dropdownmenu-modern) > ul > li {
+	background: var(--LBG) !important;
+	border: none !important;
+}
+.ccl-dropdownmenu:not(.ccl-dropdownmenu-modern) > ul > li:hover {
+	background: var(--LBG) !important;
+	border: none !important;
+}
+
+.tasklist2__task {
+	background: var(--BG);
+	border: none !important;
+}
+
+.ccl-toggle .label.unchecked {
+	background: var(--BG);
+	border: none !important;
+}
+
+
 /* ------------------ Head ----------------- */
 nav.l-main-menu ul,
 nav.l-personal-menu {
@@ -176,6 +246,87 @@ span {
 .l-main-content-nav > li > a {
     color: var(--BG) !important;
 }
+
+/* ------------------ Aufgaben ----------------- */
+
+#ccl-uc-file-dialog {
+	background: var(--tran2);
+}
+.ccl-uc-source-column-title {
+	color: var(--Accent) !important;
+}
+.ccl-uc-source-content:hover {
+	background: var(--tran);
+}
+.ccl-uc-dropzone-container .ccl-uc-dropzone {
+	background: var(--tran);
+	border-color: var(--Highlight);
+}
+.ccl-uc-dropzone-container:hover .ccl-uc-dropzone {
+	background: var(--tran2);
+}
+
+.cke_1 .cke_top {
+	background: var(--BG);
+	border: none !important;
+}
+.cke_1.cke_chrome {
+	border: none !important;
+}
+.cke_top {
+	box-shadow: none !important;
+}
+
+.cke_1 .cke_bottom {
+	background: var(--BG);
+	border: none !important;
+	border-top: none !important;
+	box-shadow: none !important;
+}
+.cke_1 .cke_toolgroup {
+	background: var(--tran);
+	border: none !important;
+	box-shadow: none !important;
+}
+.cke_1 a.cke_button_off:hover {
+	background: var(--tran2) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.cke_1 a.cke_combo_button {
+	background: var(--tran) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.cke_1 a.cke_combo_button:hover {
+	background: var(--tran2) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+body {
+	color: var(--Accent);
+}
+
+.ccl-fl-context-menu-dialog-content-item {
+	background: var(--tran2) !important;
+	border: 1px var(--tran) !important;
+	transition: border 250ms ease !important;
+}
+.ccl-fl-context-menu-dialog-content-item:hover {
+	background: var(--tran2) !important;
+	transition: border 250ms ease !important;
+	border: 2px solid var(--Highlight) !important;
+}
+.prom-collapsible-list__innerbutton {
+	background: var(--tran2) !important;
+}
+.prom-collapsible-list__buttonwrapper::before {
+	border: none !important;
+}
+.prom-collapsible-list--open .prom-collapsible-list__buttoncounter {
+	background: var(--tran);
+}
+
 /* ------------------ Sidebar ----------------- */
 .treemenu-viewport {
     background-color: var(--BG) !important;
@@ -238,7 +389,7 @@ a {
     color: var(--Accent);
 }
 a:hover {
-    color: var(--BG) !important;
+    color: var(--Highlight) !important;
 }
 
 
@@ -328,11 +479,21 @@ ul.l-personal-menu-dd {
     transition: background-color 500ms ease !important;
     border-color: var(--Icon);
 }
-
-
+.ccl-button-outline, a.ccl-button-outline {
+	background-color: var(--Icon) !important;
+    transition: background-color 500ms ease !important;
+    border-color: var(--Icon);
+	border: none !important;
+}
+.ccl-button-outline, a.ccl-button-outline:hover {
+	background-color: var(--Highlight) !important;
+    transition: background-color 500ms ease !important;
+    border-color: var(--Icon);
+	border: none !important;
+}
 /* Resources */
 .itsl-formbox {
-    background-color: var(--LBG) !important;
+    background-color: var(--Highlight) !important;
     border: 0px solid !important;
     box-shadow: 0px 0px 0px !important;
 }
@@ -362,6 +523,15 @@ a:visited {
 
 .ccl-pager {
     color: var(--BG) !important;
+}
+
+/* aufgaben */
+.itsl-lte-settings-wrapper {
+	background: var(--BG) !important;
+}
+.itsl-lte-view-overlayread .itsl-lte-settings-wrapper {
+	border-left: none;
+	border-right: none;
 }
 
 
@@ -566,4 +736,15 @@ textarea {
 a.l-personal-menu-dd-header--button:hover > span {
     background-color: var(--Icon);
     border-color: var(--Icon);
+}
+/* Push benachrichtigungen */
+.itsl-notifications-popup-container {
+	background: var(--BG);
+}
+.itsl-notification-item-unread {
+	background: var(--Icon);
+}
+.itsl-notifications-popup-footer-box {
+	background-color: var(--Icon) !important;
+	border: none;
 }
