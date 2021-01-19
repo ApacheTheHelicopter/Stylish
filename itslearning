@@ -748,3 +748,17 @@ a.l-personal-menu-dd-header--button:hover > span {
 	background-color: var(--Icon) !important;
 	border: none;
 }
+
+
+/* Updates */
+body:not(.l-group-dashboard) .il-widget.itsl-cb-news .itsl-widget-content-ul > li.itsl-light-bulletins-new-item-listitem, .il-widget.itsl-cb-stream .itsl-widget-content-ul > li.itsl-light-bulletins-new-item-listitem {
+	background-color: var(--Icon);
+}
+.ccl-button-color-green[disabled] {
+	background: var(--BG);
+	transition: 500ms all;
+}
+.ccl-button-color-green[disabled]:hover {
+	background: var(--LBG);
+	transition: 500ms all;
+}
